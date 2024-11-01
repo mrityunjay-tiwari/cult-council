@@ -9,6 +9,7 @@ import DesignTeamDisplay from './components/designTeam'
 import MedalShowcase from './components/awardsShowcase'
 import Events from './components/events'
 import Team from './components/team'
+import Tracing from './components/tracing'
 
 
 function App() {
@@ -16,6 +17,7 @@ function App() {
 
   return (
     <div className='bg-slate-900'>
+      <Tracing />
        <Main />
        <MedalShowcase />
        <Events />
