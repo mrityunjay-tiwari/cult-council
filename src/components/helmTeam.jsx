@@ -34,7 +34,6 @@ const SeniorTeamDisplay = () => {
     }
   ];
 
-  // Function to determine z-index
   const getZIndex = (position, isHovered) => {
     if (isHovered) return 30;
     if (position === 'center') return hoveredMember === null ? 20 : 10;
@@ -44,7 +43,6 @@ const SeniorTeamDisplay = () => {
   return (
     <div className="min-h-screen bg-slate-900 flex items-center justify-center p-4">
       <div className="relative max-w-6xl">
-        {/* Team Title */}
         <div className="text-center mb-24">
         <h2 className="text-5xl pb-10 font-bold text-yellow-50">Our Team</h2>
           <div className="flex items-center justify-center gap-2 mb-3">
@@ -56,7 +54,6 @@ const SeniorTeamDisplay = () => {
           <p className="text-gray-600"></p>
         </div>
 
-        {/* Connection Lines */}
         <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-full">
           <svg className="w-full h-32" viewBox="0 0 400 100">
             <path
@@ -74,7 +71,6 @@ const SeniorTeamDisplay = () => {
           </svg>
         </div>
 
-        {/* Overlapping Circles Container */}
         <div className="relative flex justify-center items-center">
           {seniorTeam.map((member, index) => {
             const isCenter = member.position === 'center';
@@ -112,22 +108,18 @@ const SeniorTeamDisplay = () => {
                   <div className={`absolute -bottom-2 left-1/2 -translate-x-1/2 w-4 h-4 ${member.accent} transform rotate-45`}></div>
                 </div>
 
-                {/* Circle Frame */}
                 <div className={`relative w-52 h-52 rounded-full overflow-hidden transform transition-all duration-300 ${
                   isHovered ? 'scale-110' : isCenter ? 'scale-105' : 'scale-100'
                 }`}>
-                  {/* Highlight Ring for CEO */}
                   {isCenter && (
                     <div className={`absolute -inset-2 bg-gradient-to-r from-amber-200 via-amber-400 to-amber-200 rounded-full animate-spin-slow transition-opacity duration-300 ${
                       hoveredMember !== null && !isHovered ? 'opacity-50' : 'opacity-100'
                     }`}></div>
                   )}
                   
-                  {/* Decorative Ring */}
                   <div className={`absolute -inset-1 ${member.accent} rounded-full transition-transform duration-300 ${
                     isHovered ? 'scale-105' : 'scale-100'
                   }`}>
-                    {/* Decorative Dots */}
                     {[...Array(8)].map((_, i) => (
                       <div
                         key={i}
@@ -143,12 +135,10 @@ const SeniorTeamDisplay = () => {
                     ))}
                   </div>
 
-                  {/* Colored Background Circle */}
                   <div className={`absolute inset-0 ${member.color} transition-all duration-300 ${
                     isHovered ? 'scale-105' : 'scale-100'
                   }`}></div>
 
-                  {/* White Inner Circle */}
                   <div className="absolute inset-2 bg-white rounded-full overflow-hidden shadow-inner">
                     <div className="w-full h-full relative">
                       <img
@@ -162,7 +152,6 @@ const SeniorTeamDisplay = () => {
                     </div>
                   </div>
 
-                  {/* Name Label */}
                   <div className={`absolute bottom-8 left-0 right-0 text-center transition-all duration-300 ${
                     isHovered ? 'transform -translate-y-1' : ''
                   }`}>

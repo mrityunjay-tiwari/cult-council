@@ -10,13 +10,11 @@ const Tracing = () => {
     const timer = setTimeout(() => setIsVisible(true), 500);
 
     const handleScroll = () => {
-      // Calculate overall scroll progress
       const windowHeight = document.documentElement.scrollHeight - window.innerHeight;
       const scrolled = window.scrollY;
       const progress = (scrolled / windowHeight) * 100;
       setScrollProgress(progress);
 
-      // Calculate active section based on viewport sections
       const viewportSections = document.querySelectorAll('section');
       const sectionPositions = Array.from(viewportSections).map(section => {
         const rect = section.getBoundingClientRect();
@@ -42,9 +40,7 @@ const Tracing = () => {
 
   return (
     <div className="fixed left-6 top-0 h-full pointer-events-none z-40">
-      {/* Main trace line */}
       <div className="relative h-full w-px">
-        {/* Glowing trail */}
         <div 
           className={`absolute top-0 w-px transition-all duration-300 ease-out ${isVisible ? 'opacity-100' : 'opacity-0'}`}
           style={{
@@ -55,7 +51,6 @@ const Tracing = () => {
           }}
         />
 
-        {/* Section dots */}
         {document.querySelectorAll('section').length > 0 && 
           Array.from(document.querySelectorAll('section')).map((_, index) => {
             const position = (index / (document.querySelectorAll('section').length - 1)) * 100;
@@ -83,7 +78,6 @@ const Tracing = () => {
           })
         }
 
-        {/* Comet head */}
         <div 
           className="absolute w-4 h-4 -translate-x-1/2"
           style={{
@@ -92,18 +86,14 @@ const Tracing = () => {
             transform: 'translate(-50%, -50%)',
           }}
         >
-          {/* Core glow */}
           <div className="absolute inset-0 rounded-full bg-blue-500 animate-pulse" />
           
-          {/* Outer glow */}
           <div className="absolute inset-[-2px] rounded-full bg-blue-400 opacity-50 blur-sm" />
           
-          {/* Sparkle effect */}
           <div className="absolute inset-[-4px] rounded-full animate-ping">
             <div className="absolute inset-0 rounded-full bg-blue-300 opacity-30 blur-md" />
           </div>
 
-          {/* Center dot */}
           <div className="absolute inset-[3px] rounded-full bg-white" />
         </div>
       </div>
