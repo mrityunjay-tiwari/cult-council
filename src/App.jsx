@@ -10,15 +10,22 @@ import MedalShowcase from './components/awardsShowcase'
 import Events from './components/events'
 import Team from './components/team'
 import Tracing from './components/tracing'
+import WelcomePage from './components/WelcomePage'
+import NavigationMenu from './components/NavBar'
+import Clubs from './components/Clubs'
+import { Routes, Route } from 'react-router-dom';
+
 
 
 function App() {
   const [count, setCount] = useState(0)
 
   return (
+
     <div className='bg-slate-900'>
       <Tracing />
-       <Main />
+       <NavigationMenu />
+       <WelcomePage />
        <MedalShowcase />
        <Events />
        <SeniorTeamDisplay />
@@ -27,5 +34,4 @@ function App() {
     </div>
   )
 }
-
 export default App

@@ -4,10 +4,13 @@ import React, { useState, useEffect, useCallback, useRef } from 'react';
 import { Link } from 'lucide-react';
 
 import { FlipWords } from "./FlipWords";
+// import NavigationMenu from "./NavBar";
 
 // const letters = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
-
+{/* <NavigationMenu /> */}
 const WelcomePage = () => {
+
+  
   // const [title, setTitle] = useState("CULTURAL COUNCIL");
   const blobRef = useRef(null);
 
