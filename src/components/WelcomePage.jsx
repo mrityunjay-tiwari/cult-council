@@ -4,7 +4,7 @@ import React, { useState, useEffect, useCallback, useRef } from 'react';
 import { Link } from 'lucide-react';
 
 import { FlipWords } from "./FlipWords";
-// import NavigationMenu from "./NavBar";
+import NavigationMenu from "./header/NavBar";
 
 // const letters = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
 {/* <NavigationMenu /> */}

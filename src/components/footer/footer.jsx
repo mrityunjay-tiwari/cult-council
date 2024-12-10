@@ -4,6 +4,7 @@ import { RiInstagramFill } from 'react-icons/ri';
 
 function Footer() {
   return (
+    <div className='bg-slate-900'>
     <footer className=' w-full gradient-bg h-1/6 text-white py-4 flex flex-col gap-8 custom-rounded-tl'>
 
         <div className='flex justify-around items-center'>
@@ -34,6 +35,7 @@ function Footer() {
             </div>
         </div>
     </footer>
+    </div>
   );
 }
 

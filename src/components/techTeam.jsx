@@ -26,7 +26,7 @@ const TechTeamDisplay = () => {
 
   return (
     
-    <div className=" bg-slate-900 flex items-center justify-center p-4">
+    <div className=" bg-slate-900 flex items-center justify-center p-4 h-1/4">
       <div className="absolute inset-0 overflow-hidden">
         {[...Array(20)].map((_, i) => (
           <div

@@ -116,7 +116,7 @@
 
 // export default NavigationMenu;
 
-
+'use client'
 import React, { useState, useEffect, useRef } from 'react';
 import gsap from 'gsap/dist/gsap';
 import { Link } from 'react-router-dom';  // Import Link from react-router-dom
@@ -221,6 +221,210 @@ const NavigationMenu = () => {
 };
 
 export default NavigationMenu;
+
+
+// Mobile View
+
+// import React, { useState, useEffect, useRef } from 'react';
+// import { motion, AnimatePresence } from 'framer-motion';
+// import { Link } from 'react-router-dom';
+// import { Menu, X } from 'lucide-react';
+
+// const NavigationMenu = () => {
+//   const [isNavOpen, setIsNavOpen] = useState(false);
+//   const navLinks = [
+//     { label: 'Home', href: '/' },
+//     { label: 'About', href: '/about' },
+//     { label: 'Events', href: '/events' },
+//     { label: 'Clubs', href: '/clubs' },
+//     { label: 'Team', href: '/team' },
+//   ];
+
+//   const menuVariants = {
+//     closed: { 
+//       opacity: 0, 
+//       y: "-100%",
+//       transition: { 
+//         duration: 0.6, 
+//         ease: "easeInOut" 
+//       }
+//     },
+//     open: { 
+//       opacity: 1, 
+//       y: "0%",
+//       transition: { 
+//         duration: 0.6, 
+//         ease: "easeInOut" 
+//       }
+//     }
+//   };
+
+//   const linkVariants = {
+//     hidden: { opacity: 0, x: 50 },
+//     visible: (custom) => ({
+//       opacity: 1, 
+//       x: 0,
+//       transition: { 
+//         delay: custom * 0.1,
+//         duration: 0.5
+//       }
+//     })
+//   };
+
+//   return (
+//     <div className="fixed top-0 left-0 w-full z-50">
+//       {/* Menu Toggle Button */}
+//       <motion.button 
+//         onClick={() => setIsNavOpen(!isNavOpen)}
+//         whileHover={{ scale: 1.05 }}
+//         whileTap={{ scale: 0.95 }}
+//         className="fixed top-6 right-6 z-50 p-2 bg-gray-800/50 backdrop-blur-md rounded-full hover:bg-gray-700/70 transition-all duration-300"
+//       >
+//         {isNavOpen ? (
+//           <X className="text-white w-6 h-6" />
+//         ) : (
+//           <Menu className="text-white w-6 h-6" />
+//         )}
+//       </motion.button>
+
+//       {/* Full-Screen Navigation Overlay */}
+//       <AnimatePresence>
+//         {isNavOpen && (
+//           <motion.div 
+//             initial="closed"
+//             animate="open"
+//             exit="closed"
+//             variants={menuVariants}
+//             className="fixed inset-0 bg-black/90 flex flex-col justify-center items-center"
+//           >
+//             <div className="space-y-6 text-center">
+//               {navLinks.map((link, index) => (
+//                 <motion.div
+//                   key={link.href}
+//                   custom={index}
+//                   initial="hidden"
+//                   animate="visible"
+//                   variants={linkVariants}
+//                 >
+//                   <Link 
+//                     to={link.href} 
+//                     onClick={() => setIsNavOpen(false)}
+//                     className="text-4xl md:text-6xl xl:text-7xl font-thin text-white hover:text-gray-300 transition-colors duration-300 block"
+//                   >
+//                     {link.label}
+//                   </Link>
+//                 </motion.div>
+//               ))}
+//             </div>
+//           </motion.div>
+//         )}
+//       </AnimatePresence>
+//     </div>
+//   );
+// };
+
+// export default NavigationMenu;
+
+
+
+
+
+// import React, { useState } from 'react';
+// import { motion } from 'framer-motion';
+// import { Link } from 'react-router-dom';
+// import { Menu, X } from 'lucide-react';
+
+// const NavigationMenu = () => {
+//   const [isNavOpen, setIsNavOpen] = useState(false);
+//   const navLinks = [
+//     { label: 'Home', href: '/' },
+//     { label: 'About', href: '/about' },
+//     { label: 'Events', href: '/events' },
+//     { label: 'Clubs', href: '/clubs' },
+//     { label: 'Team', href: '/team' },
+//   ];
+
+//   const containerVariants = {
+//     hidden: { opacity: 0 },
+//     visible: {
+//       opacity: 1,
+//       transition: {
+//         staggerChildren: 0.1,
+//         delayChildren: 0.2
+//       }
+//     }
+//   };
+
+//   const itemVariants = {
+//     hidden: { y: 20, opacity: 0 },
+//     visible: {
+//       y: 0,
+//       opacity: 1,
+//       transition: {
+//         type: "spring",
+//         damping: 12,
+//         stiffness: 100
+//       }
+//     }
+//   };
+
+//   return (
+//     <div className="fixed top-0 left-0 w-full z-50">
+//       {/* Menu Toggle */}
+//       <motion.button 
+//         onClick={() => setIsNavOpen(!isNavOpen)}
+//         whileHover={{ scale: 1.1 }}
+//         whileTap={{ scale: 0.9 }}
+//         className="fixed top-6 right-6 z-50 p-3 bg-white/10 backdrop-blur-md rounded-full border border-white/20 shadow-lg"
+//       >
+//         {isNavOpen ? (
+//           <X className="text-white w-6 h-6" />
+//         ) : (
+//           <Menu className="text-white w-6 h-6" />
+//         )}
+//       </motion.button>
+
+//       {/* Full Screen Navigation */}
+//       {isNavOpen && (
+//         <motion.div 
+//           initial={{ opacity: 0 }}
+//           animate={{ opacity: 1 }}
+//           exit={{ opacity: 0 }}
+//           className="fixed inset-0 bg-gradient-to-br from-[#1e293b] to-[#0f172a] flex items-center justify-center"
+//         >
+//           <motion.div
+//             variants={containerVariants}
+//             initial="hidden"
+//             animate="visible"
+//             className="space-y-8 text-center"
+//           >
+//             {navLinks.map((link, index) => (
+//               <motion.div 
+//                 key={link.href}
+//                 variants={itemVariants}
+//               >
+//                 <Link 
+//                   to={link.href}
+//                   onClick={() => setIsNavOpen(false)}
+//                   className="text-5xl font-extralight text-white/80 hover:text-white transition-all duration-300 tracking-wide relative group"
+//                 >
+//                   {link.label}
+//                   <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-white transition-all duration-300 group-hover:w-full"></span>
+//                 </Link>
+//               </motion.div>
+//             ))}
+//           </motion.div>
+//         </motion.div>
+//       )}
+//     </div>
+//   );
+// };
+
+// export default NavigationMenu;
+
+
+
+
 
 
 

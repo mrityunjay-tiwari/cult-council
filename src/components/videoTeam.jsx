@@ -25,7 +25,7 @@ const VideoTeamDisplay = () => {
   ];
 
   return (
-    <div className="bg-slate-900 flex items-center justify-center p-4">
+    <div className="bg-slate-900 flex items-center justify-center p-4 h-1/4">
         
       <div className="relative">
         <div className="text-center mb-8">

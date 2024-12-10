@@ -2,12 +2,50 @@ import React from 'react'
 import ReactDOM from 'react-dom/client'
 import App from './App.jsx'
 import './index.css'
-import { BrowserRouter as Router } from 'react-router-dom';
+import { createBrowserRouter, RouterProvider } from 'react-router-dom'
+import Layout from './layout.jsx'
+import MedalShowcase from './components/about/awardsShowcase.jsx'
+import WelcomePage from './components/WelcomePage.jsx'
+import Team from './components/teams/team.jsx'
+import Home from './components/home/home.jsx'
+import Clubs from './components/clubs/Clubs.jsx'
+import Events from './components/events/events.jsx'
 
+
+const router = createBrowserRouter(
+  [
+    {
+      path: '/',
+      element: <Layout />,
+      children : [
+        {
+          path : "",
+          element: <Home />
+        },
+        {
+          path : "about",
+          element : <MedalShowcase />
+        },
+        {
+          path : "team",
+          element: <Team />
+        },
+        {
+          path : "clubs",
+          element : <Clubs />
+        },
+        {
+          path : "events",
+          element : <Events />
+        }
+      ]
+    },
+    
+  ]
+)
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
-    <Router>
-     <App />
-    </Router>
+    <RouterProvider router={router} />
+    <App />
   </React.StrictMode>,
 )

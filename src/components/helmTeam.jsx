@@ -41,7 +41,7 @@ const SeniorTeamDisplay = () => {
   };
 
   return (
-    <div className="min-h-screen bg-slate-900 flex items-center justify-center p-4">
+    <div className="min-h-screen bg-slate-900 flex items-center justify-center p-4 h-1/4">
       <div className="relative max-w-6xl">
         <div className="text-center mb-24">
         <h2 className="text-5xl pb-10 font-bold text-yellow-50">Our Team</h2>
