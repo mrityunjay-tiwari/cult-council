@@ -3,13 +3,14 @@ import ReactDOM from 'react-dom/client'
 import App from './App.jsx'
 import './index.css'
 import { createBrowserRouter, RouterProvider } from 'react-router-dom'
-import Layout from './layout.jsx'
+
 import MedalShowcase from './components/about/awardsShowcase.jsx'
 import WelcomePage from './components/WelcomePage.jsx'
 import Team from './components/teams/team.jsx'
 import Home from './components/home/home.jsx'
 import Clubs from './components/clubs/Clubs.jsx'
 import Events from './components/events/events.jsx'
+import Layout from './layout.jsx'
 
 
 const router = createBrowserRouter(
