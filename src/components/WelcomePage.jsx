@@ -2,8 +2,8 @@ import gsap from "gsap/dist/gsap"
 import { useGSAP } from "@gsap/react"
 import React, { useState, useEffect, useCallback, useRef } from 'react';
 import { Link } from 'lucide-react';
-import  FlipWords  from "./FlipWords.jsx";
 import NavigationMenu from "./header/NavBar";
+import {FlipWords} from "./Flipwords.jsx";
 
 const WelcomePage = () => {
   const blobRef = useRef(null);
