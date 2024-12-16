@@ -3,7 +3,6 @@ import { useGSAP } from "@gsap/react"
 import React, { useState, useEffect, useCallback, useRef } from 'react';
 import { Link } from 'lucide-react';
 import NavigationMenu from "./header/NavBar";
-// import FlipWords from "./Flipwords.jsx";
 import {cn} from './lib/utils';
 import { AnimatePresence, motion } from "framer-motion";
 
