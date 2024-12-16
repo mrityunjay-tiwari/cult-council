@@ -10,7 +10,6 @@ import Team from './components/teams/team.jsx'
 import Home from './components/home/home.jsx'
 import Clubs from './components/clubs/Clubs.jsx'
 import Events from './components/events/events.jsx'
-import Layout from './layout.jsx'
 import Imc from './components/clubs/imc/Imc.jsx'
 import Fac from './components/clubs/fac/fac.jsx'
 import Masq from './components/clubs/masq/masq.jsx'
@@ -19,6 +18,7 @@ import Dfz from './components/clubs/dfz/dfz.jsx'
 import Aavran from './components/clubs/aavran/aavran.jsx'
 import Quiz from './components/clubs/quiz/quiz.jsx'
 import Lit from './components/clubs/lit/lit.jsx'
+import Layout from './layout.jsx'
 
 
 // const router = createBrowserRouter(
