@@ -7,13 +7,15 @@ import Tracing from '../tracing'
 
 const Team = () => {
   return (
-    <div className='flex flex-col h-full bg-slate-900 pb-10'>
+     <div className='flex flex-col h-full bg-slate-900 pb-10'>
+      
         <Tracing />
         <SeniorTeamDisplay />
         <TechTeamDisplay />
-        <VideoTeamDisplay />
         <DesignTeamDisplay />
+        <VideoTeamDisplay />
     </div>
+    
   )
 }   
 

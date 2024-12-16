@@ -119,7 +119,7 @@
 'use client'
 import React, { useState, useEffect, useRef } from 'react';
 import gsap from 'gsap/dist/gsap';
-import { Link } from 'react-router-dom';  // Import Link from react-router-dom
+import { Link } from 'react-router-dom';
 import { Menu, X } from 'lucide-react';
 import { link } from 'framer-motion/client';
 
@@ -167,7 +167,7 @@ const NavigationMenu = () => {
 
   const navLinks = [
     { label: 'Home', href: '/' },
-    { label: 'About', href: '/clubs' },
+    { label: 'About', href: '/about' },
     { label: 'Events', href: '/events' },
     { label: 'Clubs', href: '/clubs' },
     { label: 'Team', href: '/team' },
@@ -175,11 +175,12 @@ const NavigationMenu = () => {
 
   return (
     <div className="relative">
-      <div
-        className={`fixed inset-0 bg-opacity-50 backdrop-blur-md transition-opacity duration-500 ${isNavOpen ? 'opacity-100 z-10' : 'opacity-0 -z-10'}`}
+      {/* Desktop Navigation */}
+      <div 
+        className={`fixed inset-0 bg-opacity-50 backdrop-blur-md transition-opacity duration-500 max-sm:hidden ${isNavOpen ? 'opacity-100 z-10' : 'opacity-0 -z-10'}`}
         onClick={toggleNav}
       />
-      <nav className={`h-1/6 w-full fixed left-0 transition-all duration-1000 ease-in ${isNavOpen ? 'top-20' : '-top-full'} z-20`}>
+      <nav className={`h-1/6 w-full fixed left-0 transition-all duration-1000 ease-in max-sm:hidden ${isNavOpen ? 'top-20' : '-top-full'} z-20`}>
         <div ref={scrollRef} className="flex px-4 h-full w-[200%] justify-evenly">
           {navLinks.map((link, index) => (
             <Link key={index} to={link.href} className="flex-none snap-start w-auto">
@@ -208,7 +209,55 @@ const NavigationMenu = () => {
         </div>
       </nav>
 
-      <div className="fixed top-0 left-0 right-0 z-30 h-20 flex justify-center items-center">
+      {/* Mobile Navigation */}
+      <div className="hidden max-sm:block">
+        {/* Hamburger Menu Button */}
+        <button 
+          onClick={toggleNav}
+          className="fixed top-4 left-4 z-50 w-12 h-10 flex flex-col justify-between p-1 bg-transparent"
+        >
+          <span className="h-0.5 w-full bg-white"></span>
+          <span className="h-0.5 w-full bg-white"></span>
+          <span className="h-0.5 w-full bg-white"></span>
+        </button>
+
+        {/* Mobile Sidebar */}
+        {isNavOpen && (
+          <div 
+            className="fixed inset-0 bg-black bg-opacity-50 z-40 sm:hidden"
+            onClick={toggleNav}
+          >
+            <div 
+              className="fixed top-0 left-0 w-3/4 h-full bg-black text-white p-8"
+              onClick={(e) => e.stopPropagation()}
+            >
+              <button 
+                onClick={toggleNav}
+                className="absolute top-4 right-4 text-white"
+              >
+                <X size={24} />
+              </button>
+
+              <nav className="flex flex-col space-y-6 mt-16">
+                {navLinks.map((link, index) => (
+                  <Link 
+                    key={index} 
+                    to={link.href} 
+                    onClick={toggleNav}
+                    className="text-3xl font-bold hover:text-gray-300 transition-colors"
+                    style={{ fontFamily: "'Agdasima', sans-serif" }}
+                  >
+                    {link.label}
+                  </Link>
+                ))}
+              </nav>
+            </div>
+          </div>
+        )}
+      </div>
+
+      {/* Desktop Menu Button */}
+      <div className="fixed top-0 left-0 right-0 z-30 h-20 flex justify-center items-center max-sm:hidden">
         <button
           onClick={toggleNav}
           className="text-gray-100 hover:text-white hover:underline-offset-1 h-16 text-sm rounded-full outline-none cursor-pointer transition-all duration-400 ease-in-out hover:text-lg active:scale-95 flex justify-center items-center"

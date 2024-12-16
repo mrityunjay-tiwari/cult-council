@@ -1,6 +1,8 @@
 import React from 'react';
 import { IoLocationSharp, IoMail } from "react-icons/io5";
 import { RiInstagramFill } from 'react-icons/ri';
+import { BrowserRouter, Link, NavLink, Route, Routes } from 'react-router-dom';
+import Home from '../home/home';
 
 function Footer() {
   return (
@@ -9,17 +11,17 @@ function Footer() {
 
         <div className='flex justify-around items-center'>
             <div className='flex gap-4'>
-                <img src="councillogo.png" alt="logo" className='h-20 w-20 hover:scale-105 transition-transform duration-200 ease-in-out hover:cursor-pointer' />
-                <h1 className='text-2xl font-bold hover:text-indigo-100 transition-colors duration-200 ease-in-out hover:cursor-pointer tracking-wide leading-tight'>Cultural <br></br> Council</h1>
+                <Link to={'/'}><img src="/councillogo.png" alt="logo" className='h-20 w-20 hover:scale-105 transition-transform duration-200 ease-in-out hover:cursor-pointer' /></Link>
+                <Link to={'/'}><h1 className='text-2xl font-bold hover:text-indigo-100 transition-colors duration-200 ease-in-out hover:cursor-pointer tracking-wide leading-tight'>Cultural <br></br> Council</h1></Link>
                 <div className="h-16 w-px bg-gray-400"></div>
-                <img src="collegelogo.png" alt="collegelogo" className='h-14 w-14 hover:scale-105 transition-transform duration-200 ease-in-out' />
+                <img src="/collegelogo.png" alt="collegelogo" className='h-14 w-14 hover:scale-105 transition-transform duration-200 ease-in-out' />
             </div>
             <div>
                 <ul className='flex gap-16 font-semibold text-lg'>
-                    <li className='hover:text-gray-300 hover:cursor-pointer hover:scale-105 transition-all duration-200 ease-in-out'>Home</li>
-                    <li className='hover:text-gray-300 hover:cursor-pointer hover:scale-105 transition-all duration-200 ease-in-out'>Events</li>
-                    <li className='hover:text-gray-300 hover:cursor-pointer hover:scale-105 transition-all duration-200 ease-in-out'>Clubs</li>
-                    <li className='hover:text-gray-300 hover:cursor-pointer hover:scale-105 transition-all duration-200 ease-in-out'>Teams</li>
+                    <Link to={'/'} className='hover:text-gray-300 hover:cursor-pointer hover:scale-105 transition-all duration-200 ease-in-out'>Home</Link>
+                    <Link to={'/events'} className='hover:text-gray-300 hover:cursor-pointer hover:scale-105 transition-all duration-200 ease-in-out'>Events</Link>
+                    <Link to={'/clubs'} className='hover:text-gray-300 hover:cursor-pointer hover:scale-105 transition-all duration-200 ease-in-out'>Clubs</Link>
+                    <Link to={'/team'} className='hover:text-gray-300 hover:cursor-pointer hover:scale-105 transition-all duration-200 ease-in-out'>Teams</Link>
                 </ul>
             </div>
         </div>

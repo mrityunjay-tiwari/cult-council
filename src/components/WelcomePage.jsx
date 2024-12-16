@@ -2,41 +2,13 @@ import gsap from "gsap/dist/gsap"
 import { useGSAP } from "@gsap/react"
 import React, { useState, useEffect, useCallback, useRef } from 'react';
 import { Link } from 'lucide-react';
-
 import { FlipWords } from "./FlipWords";
 import NavigationMenu from "./header/NavBar";
 
-// const letters = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
-{/* <NavigationMenu /> */}
 const WelcomePage = () => {
-
-  
-  // const [title, setTitle] = useState("CULTURAL COUNCIL");
   const blobRef = useRef(null);
 
   const words = ["Sing", "Dance", "Film", "Create"];
-
-  // const animateTitle = useCallback(() => {
-  //   let iteration = 0;
-  //   const interval = setInterval(() => {
-  //     setTitle(prev =>
-  //       prev.split("").map((letter, index) => {
-  //         if (index < Math.floor(iteration)) {
-  //           return "CULTURAL COUNCIL"[index];
-  //         }
-  //         if (letter === ' ') {
-  //           return ' ';
-  //         }
-  //         return letters[Math.floor(Math.random() * 26)];
-  //       }).join("")
-  //     );
-  //     if (iteration >= "CULTURAL COUNCIL".length) {
-  //       clearInterval(interval);
-  //     }
-  //     iteration += 1 / 3;
-  //   }, 30);
-  //   return () => clearInterval(interval);
-  // }, []);
 
   useGSAP(() => {
     gsap.to('#cult', {opacity: 1, duration: 1.5, delay: 1.5, translateY: 250})
@@ -60,7 +32,34 @@ const WelcomePage = () => {
   }, []);
 
   return (
-    <div className="grid place-items-center h-screen bg-black overflow-hidden">
+    <div className="grid place-items-center h-screen bg-black overflow-hidden max-sm:h-[600px] max-sm:flex max-sm:flex-col max-sm:justify-center">
+      {/* Background bubbles animation */}
+      <div className="absolute inset-0 overflow-hidden">
+        {[...Array(20)].map((_, i) => (
+          <div
+            key={i}
+            className="absolute rounded-full opacity-10"
+            style={{
+              width: `${Math.random() * 200 + 50}px`,
+              height: `${Math.random() * 200 + 50}px`,
+              background: 'white',
+              top: `${Math.random() * 100}%`,
+              left: `${Math.random() * 100}%`,
+              animation: `floatBubble ${Math.random() * 10 + 10}s linear infinite`,
+              animationDelay: `${Math.random()}s`,
+            }}
+          />
+        ))}
+      </div>
+
+      <style jsx>{`
+        @keyframes floatBubble {
+          0% { transform: translateY(100vh) scale(0); opacity: 0; }
+          50% { opacity: 0.1; }
+          100% { transform: translateY(-100px) scale(1); opacity: 0; }
+        }
+      `}</style>
+
       <div
         id="blob"
         ref={blobRef}
@@ -80,42 +79,27 @@ const WelcomePage = () => {
           zIndex: 0,
         }}
       ></div>
-      {/* <div
-        id="cult"
-        className=" text-left text-white h-full w-full ml-36 opacity-0 translate-y-1/2"
-        style={{
-          position: 'relative',
-          zIndex: 1,
-          fontFamily: "'Murmure', sans-serif",
-          fontSize: 'clamp(3rem, 10vw, 250px)',
-        }}
-      >
-        <h1 onMouseEnter={animateTitle}>
-          {title}
-        </h1>
-        <h1>
-          IIT BHU
-        </h1>
-      </div> */}
-      <div className="px-4 w-auto h-auto">
-        <div className="flex h-[10rem]">
-          <div className="h-auto w-auto text-[100px] pr-8 font-normal text-neutral-600 dark:text-neutral-400">
+
+      <div className="px-4 w-auto h-auto max-sm:text-center max-sm:px-2">
+        <div className="flex h-[10rem] max-sm:flex-col max-sm:h-auto max-sm:items-center max-sm:gap-2">
+          <div className="h-auto w-auto text-[100px] pr-8 font-normal text-neutral-600 dark:text-neutral-400 max-sm:text-[50px] max-sm:pr-0">
                We
           </div>
-          <div className="h-auto w-auto text-[100px] font-normal text-neutral-600 dark:text-neutral-400">
+          <div className="h-auto w-auto text-[100px] font-normal text-neutral-600 dark:text-neutral-400 max-sm:text-[50px]">
                <FlipWords words={words} /> <br />
           </div>
         </div>
 
-      <div className="text-[100px] mx-auto font-normal text-neutral-600 dark:text-neutral-400">
-        at Cult Council of IIT BHU
+        <div className="text-[100px] mx-auto font-normal text-neutral-600 dark:text-neutral-400 max-sm:text-[50px]">
+          at Cult Council of IIT BHU
+        </div>
       </div>
-    </div>
     </div>
   );
 };
 
 export default WelcomePage;
+
 
 
 
