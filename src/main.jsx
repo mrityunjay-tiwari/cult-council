@@ -18,7 +18,7 @@ import Dfz from './components/clubs/dfz/dfz.jsx'
 import Aavran from './components/clubs/aavran/aavran.jsx'
 import Quiz from './components/clubs/quiz/quiz.jsx'
 import Lit from './components/clubs/lit/lit.jsx'
-import Layout from './layout.jsx'
+import Layout from './Layout.jsx'
 
 
 // const router = createBrowserRouter(
