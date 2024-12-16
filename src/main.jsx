@@ -7,7 +7,7 @@ import { createBrowserRouter, createRoutesFromElements, Route, RouterProvider } 
 import MedalShowcase from './components/about/awardsShowcase.jsx'
 import WelcomePage from './components/WelcomePage.jsx'
 import Team from './components/teams/team.jsx'
-// import Home from './components/home/home.jsx'
+import Home from './components/home/home.jsx'
 import Clubs from './components/clubs/Clubs.jsx'
 import Events from './components/events/events.jsx'
 import Imc from './components/clubs/imc/Imc.jsx'
@@ -19,8 +19,6 @@ import Aavran from './components/clubs/aavran/aavran.jsx'
 import Quiz from './components/clubs/quiz/quiz.jsx'
 import Lit from './components/clubs/lit/lit.jsx'
 import Layout from './layout.jsx'
-import Home from './components/home/home.jsx'
-
 
 // const router = createBrowserRouter(
 //   [
