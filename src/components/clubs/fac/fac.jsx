@@ -9,7 +9,6 @@ import FacHelm from './facHelm';
 import FacCarousel from './eventsFac';
 import ArtCarousel from './artsFac';
 
-// Utility function for class merging (if not already imported)
 function cn(...inputs) {
   return inputs.filter(Boolean).join(' ');
 }

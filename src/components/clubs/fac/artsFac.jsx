@@ -2,7 +2,7 @@ import React, { useState, useRef, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { ChevronLeft, ChevronRight, Pause, Play } from 'lucide-react';
 
-// Sample art pieces data - replace with your actual artwork collection
+
 const artPieces = [
   {
     id: 1,
@@ -124,7 +124,7 @@ const ArtCarousel = () => {
     };
   }, [isAutoPlayPaused]);
 
-  // Restart auto-slide timer whenever index changes
+  
   useEffect(() => {
     startAutoSlide();
   }, [currentIndex, isAutoPlayPaused]);

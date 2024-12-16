@@ -9,13 +9,13 @@ const FloatingMusicIcons = ({
   maxSize = 20, 
   opacity = 0.1 
 }) => {
-  // Generate floating icon configurations
+ 
   const floatingIcons = [...Array(iconCount)].map((_, i) => ({
     id: i,
     size: Math.random() * (maxSize - minSize),
-    delay: Math.random()*2, // Varied start times
-    duration: Math.random() *15, // Longer, varied duration
-    left: Math.random() * 400 , // Random horizontal position
+    delay: Math.random()*2, 
+    duration: Math.random() *15, 
+    left: Math.random() * 400 , 
     rotate: Math.random() * 360
   }));
 
@@ -29,7 +29,7 @@ const FloatingMusicIcons = ({
             width: `${icon.size}px`,
             height: `${icon.size}px`,
             left: `${icon.left}%`,
-            bottom: 0, // Start from the bottom
+            bottom: 0, 
             animation: `floatUp ${icon.duration}s linear infinite`,
             animationDelay: `${icon.delay}s`,
           }}

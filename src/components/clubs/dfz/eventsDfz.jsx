@@ -23,25 +23,25 @@ const DfzCarousel = () => {
 
   useEffect(() => {
     const container = containerRef.current;
-    const scrollWidth = container.scrollWidth; // Total width of all images combined
+    const scrollWidth = container.scrollWidth; 
     let currentScroll = 0;
     let animationFrameId;
 
     const moveCarousel = () => {
       if (!isHovered) {
-        currentScroll += 0.5; // Slow scroll speed
+        currentScroll += 0.5; 
         if (currentScroll >= scrollWidth) {
-          currentScroll = 0; // Reset scroll to the start
+          currentScroll = 0; 
         }
-        container.scrollLeft = currentScroll; // Update scroll position
+        container.scrollLeft = currentScroll; 
       }
-      animationFrameId = requestAnimationFrame(moveCarousel); // Continue the animation
+      animationFrameId = requestAnimationFrame(moveCarousel); 
     };
 
-    moveCarousel(); // Start the scroll animation
+    moveCarousel(); 
 
     return () => {
-      cancelAnimationFrame(animationFrameId); // Clean up animation on component unmount
+      cancelAnimationFrame(animationFrameId); 
     };
   }, [isHovered]);
 
@@ -59,17 +59,17 @@ const DfzCarousel = () => {
           <div
             key={index}
             onMouseEnter={() => {
-              setIsHovered(true); // Stop scrolling
+              setIsHovered(true); 
               setHoveredIndex(index);
             }}
             onMouseLeave={() => {
-              setIsHovered(false); // Resume scrolling
+              setIsHovered(false); 
               setHoveredIndex(null);
             }}
             className={`relative w-64 h-80 flex-shrink-0 rounded-2xl bg-cover bg-center transition-transform duration-500 ${
               hoveredIndex === index || hoveredIndex === null
-                ? "scale-110 z-10 shadow-2xl -translate-y-2" // Highlighted image
-                : "scale-90 z-0 backdrop-blur-lg bg-white/30 opacity-50" // Glassmorphism for others
+                ? "scale-110 z-10 shadow-2xl -translate-y-2" 
+                : "scale-90 z-0 backdrop-blur-lg bg-white/30 opacity-50" 
             }`}
             style={{
               backgroundImage: `url(${src})`,

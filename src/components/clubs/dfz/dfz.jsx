@@ -8,7 +8,6 @@ import DfzCarousel from './eventsDfz';
 import { IoWalk } from "react-icons/io5";
 import FloatingMusicIcons from './bgDfz';
 import DfzMedalShowcase from './awardsDfz';
-// Utility function for class merging (if not already imported)
 function cn(...inputs) {
   return inputs.filter(Boolean).join(' ');
 }
@@ -124,7 +123,6 @@ export const LampContainer = ({ children, className }) => {
         {children}
       </div>
       
-        {/* <ImcMedalShowcase /> */}
 
     </div>
   );

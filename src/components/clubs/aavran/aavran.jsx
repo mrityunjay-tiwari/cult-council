@@ -9,7 +9,6 @@ import AavranHelm from './aavranHelm';
 import { GiAmpleDress } from "react-icons/gi";
 import AavranCarousel from './eventsAavran';
 
-// Utility function for class merging (if not already imported)
 function cn(...inputs) {
   return inputs.filter(Boolean).join(' ');
 }
@@ -125,7 +124,6 @@ export const LampContainer = ({ children, className }) => {
         {children}
       </div>
       
-        {/* <ImcMedalShowcase /> */}
 
     </div>
   );
