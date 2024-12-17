@@ -191,16 +191,16 @@ const SeniorTeamDisplay = () => {
     {
       name: 'Harshit Mishra',
       role: 'Joint General Secretary',
-      avatar: 'PP.jpg',
+      avatar: '/harshit.JPG',
       color: 'bg-blue-100',
       accent: 'bg-blue-500',
       icon: Target,
       position: 'left'
     },
     {
-      name: 'Somil',
+      name: 'Somil Mittal',
       role: 'General Secretary',
-      avatar: 'PP.jpg',
+      avatar: '/somil.jpg',
       color: 'bg-amber-100',
       accent: 'bg-amber-500',
       icon: Trophy,
@@ -209,7 +209,7 @@ const SeniorTeamDisplay = () => {
     {
       name: 'Rohit Kaushik',
       role: 'Joint General Secretary',
-      avatar: 'PP.jpg',
+      avatar: '/rohit.jpg',
       color: 'bg-emerald-100',
       accent: 'bg-emerald-500',
       icon: Zap,
