@@ -422,7 +422,7 @@ const ParallaxGallery = () => {
   ];
 
   return (
-    <div className="relative h-screen overflow-x-hidden bg-black w-screen">
+    <div className="relative h-screen overflow-hidden bg-black w-screen">
       <div className="absolute top-0 h-20 bg-gradient-to-b from-slate-900 to-transparent z-10 pointer-events-none" />
       
       <div className="absolute inset-0 flex justify-between gap-2 md:gap-4 px-2 md:px-4">
