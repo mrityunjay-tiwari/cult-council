@@ -489,7 +489,7 @@ const VideoTeamDisplay = () => {
       color: 'bg-blue-100',
     },
     {
-      name: 'Laxmi Kumari',
+      name: 'Nishant Kumar',
       role: 'Tech Manager',
       avatar: 'PP.jpg',
       color: 'bg-purple-100',
