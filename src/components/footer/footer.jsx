@@ -6,7 +6,7 @@ import Home from '../home/home';
 
 function Footer() {
   return (
-    <div className='bg-slate-900'>
+    <div className='bg-slate-900 w-screen'>
     <footer className=' w-full gradient-bg h-1/6 text-white py-4 flex flex-col gap-8 custom-rounded-tl'>
 
         <div className='flex justify-around items-center'>
