@@ -469,10 +469,10 @@ const ParallaxGallery = () => {
 
 const Events = () => {
   return (
-    <div className="bg-gray-900 text-white min-h-screen pb-10 md:pb-20 w-screen overflow-x-hidden">
-      <div className="container mx-auto py-10 md:py-20">
+    <div className="bg-gray-900 text-white min-h-screen pb-10 md:pb-20 max-w-screen overflow-x-hidden">
+      <div className="container mx-auto py-10 md:py-20 max-w-full">
         <AnimatedHeading />
-        <div className="flex flex-wrap -mx-2 md:-mx-6">
+        <div className="flex flex-wrap -mx-2 md:-mx-6 max-w-full">
           {events.map(event => (
             <EventCard key={event.id} {...event} />
           ))}
