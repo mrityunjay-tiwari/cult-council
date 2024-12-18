@@ -345,7 +345,7 @@ const EventCard = ({ title, description, features }) => {
 
   return (
     <motion.div 
-      className="w-full p-4 md:w-1/2 md:p-6"
+      className="w-screen p-4 md:w-1/2 md:p-6"
       variants={containerVariants}
       initial="hidden"
       animate="visible"
@@ -359,7 +359,7 @@ const EventCard = ({ title, description, features }) => {
         whileTap={{ scale: 0.98 }}
       >
         <motion.h2 
-          className="text-3xl md:text-4xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-pink-500 to-yellow-500 mb-4 md:mb-6"
+          className="text-3xl md:text-4xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-pink-500 to-yellow-500 mb-4 md:mb-6 pb-1"
           animate={{ scale: isHovered ? 1.05 : 1 }}
           transition={{ duration: 0.3 }}
         >
