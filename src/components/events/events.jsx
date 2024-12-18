@@ -345,7 +345,7 @@ const EventCard = ({ title, description, features }) => {
 
   return (
     <motion.div 
-      className="w-screen p-4 md:w-1/2 md:p-6"
+      className="w-screen p-4 md:w-1/2 md:p-6 overflow-x-hidden"
       variants={containerVariants}
       initial="hidden"
       animate="visible"
