@@ -8,12 +8,12 @@ import Team from '../teams/team'
 
 const Home = () => {
   return (
-    <>
+    <div className='w-screen'>
         <WelcomePage />
         <MedalShowcase />
         <Events />
         <Team />
-    </>
+    </div>
   )
 }
 
