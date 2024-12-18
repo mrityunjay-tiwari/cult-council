@@ -76,7 +76,7 @@ const MedalShowcase = () => {
   );
 
   return (
-<div className="min-h-screen p-4 xs:p-6 sm:p-8 relative bg-gradient-to-t from-gray-900 via-gray-950  to-black">
+<div className="min-h-screen p-4 xs:p-6 sm:p-8 relative bg-gradient-to-t from-gray-900 via-slate-950  to-neutral-950">
       <div className="absolute inset-0 overflow-hidden">
         {[...Array(20)].map((_, i) => (
           <div

@@ -33,7 +33,7 @@ const WelcomePage = () => {
   }, []);
 
   return (
-    <div className="grid place-items-center h-screen bg-black overflow-hidden max-sm:h-[600px] max-sm:flex max-sm:flex-col max-sm:justify-center">
+    <div className="grid place-items-center h-screen bg-neutral-950 overflow-hidden max-sm:h-[600px] max-sm:flex max-sm:flex-col max-sm:justify-center">
       {/* Background bubbles animation */}
       <div className="absolute inset-0 overflow-hidden">
         {[...Array(20)].map((_, i) => (
