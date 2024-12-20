@@ -20,6 +20,8 @@ import Quiz from './components/clubs/quiz/quiz.jsx'
 import Lit from './components/clubs/lit/lit.jsx'
 import Layout from './layout.jsx'
 
+import { Analytics } from "@vercel/analytics/react"
+
 // const router = createBrowserRouter(
 //   [
 //     {
@@ -81,7 +83,7 @@ ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
     <RouterProvider router={router} />
     <App />
-    <SpeedInsights />
+    <Analytics />
   </React.StrictMode>,
 )
 
