@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 
-const HelmMasq = () => {
+const WmcHelm = () => {
   const [hoveredMember, setHoveredMember] = useState(null);
   const [isMobile, setIsMobile] = useState(false);
   const [longPressedMember, setLongPressedMember] = useState(null);
@@ -8,21 +8,21 @@ const HelmMasq = () => {
 
   const teamMembers = [
     {
-      name: 'Sagar',
+      name: 'Kalyani',
       role: 'Tech Head',
-      avatar: '/SagarMasq.jpg',
+      avatar: '/KalyaniWMC.jpg',
       color: 'bg-blue-100',
     },
     {
-      name: 'Shaun',
+      name: 'Anubhav',
       role: 'Tech Manager',
-      avatar: '/ShaunMasq.jpg',
+      avatar: '/SecyWmc.jpg',
       color: 'bg-purple-100',
     },
     {
-      name: 'Shivansh',
+      name: 'JtSecyWmcName',
       role: 'Teach Manager',
-      avatar: '/ShivanshMasq.jpg',
+      avatar: '/jtSecyWmc.jpg',
       color: 'bg-pink-100',
     },
   ];
@@ -165,4 +165,4 @@ const HelmMasq = () => {
   );
 };
 
-export default HelmMasq;
+export default WmcHelm;

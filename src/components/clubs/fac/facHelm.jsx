@@ -1,8 +1,6 @@
-
-
 import React, { useState, useEffect } from 'react';
 
-const VideoTeamDisplay = () => {
+const FacHelm = () => {
   const [hoveredMember, setHoveredMember] = useState(null);
   const [isMobile, setIsMobile] = useState(false);
   const [longPressedMember, setLongPressedMember] = useState(null);
@@ -10,21 +8,21 @@ const VideoTeamDisplay = () => {
 
   const teamMembers = [
     {
-      name: 'Aditya',
+      name: 'Vedant Zilpe',
       role: 'Tech Head',
-      avatar: '/PP.jpg',
+      avatar: '/VedantZilpeFac.jpg',
       color: 'bg-blue-100',
     },
     {
-      name: 'Ansh Yadav',
+      name: 'Aditya Raut',
       role: 'Tech Manager',
-      avatar: '/PP.jpg',
+      avatar: '/AdityaRautFac.jpg',
       color: 'bg-purple-100',
     },
     {
-      name: 'Nishant',
+      name: 'Shrishti Singh',
       role: 'Teach Manager',
-      avatar: '/PP.jpg',
+      avatar: '/ShristiSinghFac.jpeg',
       color: 'bg-pink-100',
     },
   ];
@@ -45,7 +43,7 @@ const VideoTeamDisplay = () => {
   const handleLongPressStart = (index) => {
     longPressTimeout.current = setTimeout(() => {
       setLongPressedMember(index);
-    }, 500); // Long press duration
+    }, 500); // Long press duration (500ms)
   };
 
   const handleLongPressEnd = () => {
@@ -54,12 +52,37 @@ const VideoTeamDisplay = () => {
   };
 
   return (
-    <div className="bg-gradient-to-t from-slate-900 via-slate-950 to-gray-800 flex items-center justify-center p-4 relative pb-20 pt-10 z-100">
-    
+    <div className="bg-slate-900 flex items-center justify-center p-4 relative">
+      <div className="absolute inset-0 overflow-hidden">
+        {[...Array(20)].map((_, i) => (
+          <div
+            key={i}
+            className="absolute rounded-full opacity-10"
+            style={{
+              width: `${Math.random() * 200 + 50}px`,
+              height: `${Math.random() * 200 + 50}px`,
+              background: 'white',
+              top: `${Math.random() * 100}%`,
+              left: `${Math.random() * 100}%`,
+              animation: `floatBubble ${Math.random() * 10 + 10}s linear infinite`,
+              animationDelay: `${Math.random()}s`,
+            }}
+          />
+        ))}
+      </div>
+
+      <style jsx>{`
+        @keyframes floatBubble {
+          0% { transform: translateY(100vh) scale(0); opacity: 0; }
+          50% { opacity: 0.1; }
+          100% { transform: translateY(-100px) scale(1); opacity: 0; }
+        }
+      `}</style>
 
       <div className="relative max-w-6xl">
         <div className="text-center mb-8">
-          <h2 className="bg-gradient-to-br from-slate-300 to-slate-500 pt-8 pb-4 bg-clip-text text-center text-4xl font-semibold tracking-tight text-transparent md:text-5xl">Our Helm</h2>
+          <h2 className="text-3xl font-bold text-yellow-50">Tech Team</h2>
+          <p className="text-gray-600 mt-2">Meet our Tech Guys</p>
         </div>
 
         <div className="flex justify-center items-center -space-x-8 flex-wrap">
@@ -88,9 +111,9 @@ const VideoTeamDisplay = () => {
                 className={`relative rounded-full overflow-hidden transform transition-all duration-300 ${
                   hoveredMember === index || longPressedMember === index ? 'scale-110' : 'scale-100'
                 }`}
-                // Dynamic sizing for image frame - for my reference
+                // Dynamic sizing for image frame
                 style={{
-                  width: isMobile ? '6rem' : '12rem', 
+                  width: isMobile ? '6rem' : '12rem', // 96px for mobile, 192px for desktop
                   height: isMobile ? '6rem' : '12rem',
                 }}
               >
@@ -142,4 +165,4 @@ const VideoTeamDisplay = () => {
   );
 };
 
-export default VideoTeamDisplay;
+export default FacHelm;

@@ -6,7 +6,7 @@ import { Headphones, Guitar } from 'lucide-react';
 import WmcMedalShowcase from './awardsWmc';
 import FloatingMusicIcons from './bgWmc';
 import WmcCarousel from './eventsWmc';
-import WmcHelm from './imcHelm';
+import WmcHelm from './wmcHelm';
 import { GiGuitar } from "react-icons/gi";
 
 // Utility function for class merging (if not already imported)

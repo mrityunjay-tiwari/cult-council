@@ -8,7 +8,7 @@ const VideoTeamDisplay = () => {
 
   const teamMembers = [
     {
-      name: 'Mrityunjay Tiwari',
+      name: 'Sambhav Gupta',
       role: 'Tech Head',
       avatar: 'PP.jpg',
       color: 'bg-blue-100',
