@@ -22,7 +22,7 @@ const WmcHelm = () => {
     {
       name: 'JtSecyWmcName',
       role: 'Teach Manager',
-      avatar: '/jtSecyWmc.jpg',
+      avatar: '/JtSecyWmc.jpg',
       color: 'bg-pink-100',
     },
   ];
