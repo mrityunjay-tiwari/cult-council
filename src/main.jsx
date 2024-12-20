@@ -21,7 +21,7 @@ import Lit from './components/clubs/lit/lit.jsx'
 import Layout from './layout.jsx'
 
 import { Analytics } from "@vercel/analytics/react"
-import { SpeedInsights } from "@vercel/speed-insights/react"
+import { SpeedInsights } from "@vercel/speed-insights/next"
 
 // const router = createBrowserRouter(
 //   [
