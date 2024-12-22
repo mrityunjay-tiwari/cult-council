@@ -10,6 +10,8 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@babel/core": "^7.x.x",
+    "@babel/traverse": "^7.x.x",
     "@fortawesome/free-brands-svg-icons": "^6.6.0",
     "@fortawesome/react-fontawesome": "^0.2.2",
     "@gsap/react": "^2.1.1",
@@ -17,7 +19,6 @@
     "@react-three/fiber": "^8.17.10",
     "@vercel/analytics": "^1.4.1",
     "@vercel/speed-insights": "^1.1.0",
-    "babel-plugin": "^1.0.7",
     "clsx": "^2.1.1",
     "framer-motion": "^11.14.4",
     "gsap": "^3.12.5",
