@@ -21,7 +21,7 @@ import Lit from './components/clubs/lit/lit.jsx'
 import Layout from './layout.jsx'
 
 import { Analytics } from "@vercel/analytics/react"
-import { SpeedInsights } from "@vercel/speed-insights/next"
+import { SpeedInsights } from "@vercel/speed-insights/react"
 
 // const router = createBrowserRouter(
 //   [
@@ -83,7 +83,6 @@ const router = createBrowserRouter(
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
     <RouterProvider router={router} />
-    <App />
     <Analytics />
     <SpeedInsights />
   </React.StrictMode>,
