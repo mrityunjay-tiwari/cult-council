@@ -9,19 +9,19 @@ const ImcHelm = () => {
   const teamMembers = [
     {
       name: 'Mehul Goyal',
-      role: 'Tech Head',
+      role: 'Joint Secretary',
       avatar: '/mehulimc.jpg',
       color: 'bg-blue-100',
     },
     {
       name: 'Mehul Goyal',
-      role: 'Tech Manager',
+      role: 'Secretary',
       avatar: '/mehulimc.jpg',
       color: 'bg-purple-100',
     },
     {
       name: 'Mehul Goyal',
-      role: 'Teach Manager',
+      role: 'Joint Secretary',
       avatar: '/mehulimc.jpg',
       color: 'bg-pink-100',
     },
@@ -52,7 +52,7 @@ const ImcHelm = () => {
   };
 
   return (
-    <div className="bg-slate-900 flex items-center justify-center p-4 relative">
+    <div className="bg-gradient-to-t from-slate-900 via-gray-900 to-gray-800 flex items-center justify-center p-4 relative py-14">
       <div className="absolute inset-0 overflow-hidden">
         {[...Array(20)].map((_, i) => (
           <div
@@ -81,7 +81,7 @@ const ImcHelm = () => {
 
       <div className="relative max-w-6xl">
         <div className="text-center mb-8">
-          <h2 className="text-3xl font-bold text-yellow-50">Tech Team</h2>
+          <h2 className="text-3xl md:text-4xl font-semibold text-slate-200">Tech Team</h2>
           <p className="text-gray-600 mt-2">Meet our Tech Guys</p>
         </div>
 

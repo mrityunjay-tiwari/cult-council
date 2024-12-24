@@ -1,19 +1,21 @@
 import React, { useEffect, useRef, useState } from "react";
 
 const images = [
-  "/music.jpg",
-  "/music.jpg",
-  "/music.jpg",
-  "/music.jpg",
-  "/music.jpg",
-  "/music.jpg",
-  "/music.jpg",
-  "/music.jpg",
-  "/music.jpg",
-  "/music.jpg",
-  "/music.jpg",
-  "/music.jpg",
-  "/music.jpg",
+  "/wmc/wmc1.JPG",
+  "/wmc/wmc2.JPG",
+  "/wmc/wmc4.jpg",
+  "/wmc/wmc5.jpeg",
+  "/wmc/wmc6.jpg",
+  "/wmc/wmc7.jpg",
+  "/wmc/wmc8.jpg",
+  "/wmc/wmc9.jpg",
+  "/wmc/wmc10.jpg",
+  "/wmc/wmc11.jpg",
+  "/wmc/wmc12.jpg",
+  "/wmc/wmc13.jpg",
+  "/wmc/wmc14.jpg",
+  "/wmc/wmc15.jpg",
+  "/wmc/wmc16.jpg",
 ];
 
 const WmcCarousel = () => {

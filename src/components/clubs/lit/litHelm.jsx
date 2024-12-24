@@ -9,19 +9,19 @@ const LitHelm = () => {
   const teamMembers = [
     {
       name: 'LitJtSecyName',
-      role: 'Tech Head',
+      role: 'Joint Secretary',
       avatar: '/jtsecylit.jpg',
       color: 'bg-blue-100',
     },
     {
       name: 'LitSecyName',
-      role: 'Tech Manager',
+      role: 'Secretary',
       avatar: '/secylit.jpg',
       color: 'bg-purple-100',
     },
     {
       name: 'LitJtSecyName',
-      role: 'Teach Manager',
+      role: 'Joint Secretary',
       avatar: '/jtsecylit.jpg',
       color: 'bg-pink-100',
     },
@@ -52,7 +52,7 @@ const LitHelm = () => {
   };
 
   return (
-    <div className="bg-gradient-to-t from-slate-900 via-gray-900 to-gray-800 flex items-center justify-center p-4 relative pt-14 pb-14">
+    <div className="bg-gradient-to-t from-slate-900 via-gray-900 to-gray-800 flex items-center justify-center p-4 relative py-14">
       <div className="absolute inset-0 overflow-hidden">
         {[...Array(20)].map((_, i) => (
           <div

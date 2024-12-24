@@ -9,19 +9,19 @@ const WmcHelm = () => {
   const teamMembers = [
     {
       name: 'Kalyani',
-      role: 'Tech Head',
+      role: 'Joint Secretary',
       avatar: '/KalyaniWMC.jpg',
       color: 'bg-blue-100',
     },
     {
       name: 'Anubhav',
-      role: 'Tech Manager',
+      role: 'Secretary',
       avatar: '/SecyWmc.jpg',
       color: 'bg-purple-100',
     },
     {
       name: 'JtSecyWmcName',
-      role: 'Teach Manager',
+      role: 'Joint Secretary',
       avatar: '/JtSecyWmc.jpg',
       color: 'bg-pink-100',
     },
@@ -52,7 +52,7 @@ const WmcHelm = () => {
   };
 
   return (
-    <div className="bg-slate-900 flex items-center justify-center p-4 relative">
+    <div className="bg-gradient-to-t from-slate-900 via-gray-900 to-gray-800 flex items-center justify-center p-4 relative py-14">
       <div className="absolute inset-0 overflow-hidden">
         {[...Array(20)].map((_, i) => (
           <div
@@ -81,8 +81,8 @@ const WmcHelm = () => {
 
       <div className="relative max-w-6xl">
         <div className="text-center mb-8">
-          <h2 className="text-3xl font-bold text-yellow-50">Tech Team</h2>
-          <p className="text-gray-600 mt-2">Meet our Tech Guys</p>
+          <h2 className="text-3xl md:text-5xl font-semibold text-slate-200">Our Helm</h2>
+          {/* <p className="text-gray-600 mt-2">Meet our Tech Guys</p> */}
         </div>
 
         <div className="flex justify-center items-center -space-x-8 flex-wrap">
