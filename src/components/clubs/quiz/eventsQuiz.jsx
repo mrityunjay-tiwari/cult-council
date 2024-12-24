@@ -48,7 +48,7 @@ const QuizCarousel = () => {
   return (
   <>
     <div className="bg-slate-950">
-        <h1 className="bg-gradient-to-br from-slate-300 to-slate-500 py-8 bg-clip-text text-center text-4xl font-semibold tracking-tight text-transparent md:text-5xl">Gallery of Rhythms</h1> 
+        <h1 className="bg-gradient-to-br from-slate-300 to-slate-500 py-8 bg-clip-text text-center text-4xl font-semibold tracking-tight text-transparent md:text-5xl">Trivia Wall</h1> 
     </div>
     <div className="relative w-full h-96 overflow-hidden bg-gradient-to-b from-slate-950 via-gray-900 to-gray-800">
       <div

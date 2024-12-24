@@ -8,6 +8,7 @@ import LitMedalShowcase from './awardsLit';
 import FloatingMusicIcons from './bgLit';
 import LitHelm from './litHelm';
 import LitCarousel from './eventsLit';
+import EventTypesLitCarousel from './typesLit';
 
 // Utility function for class merging (if not already imported)
 function cn(...inputs) {
@@ -36,6 +37,7 @@ export function Lit() {
     
     
     <LitMedalShowcase />
+    <EventTypesLitCarousel />
     <LitCarousel />
     <LitHelm />
     <FloatingMusicIcons 
