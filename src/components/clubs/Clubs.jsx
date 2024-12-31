@@ -280,14 +280,14 @@ const Clubs = () => {
   ];
 
   const images = [
-    "https://images.unsplash.com/photo-1524781289445-ddf8f5695861",
-    "https://images.unsplash.com/photo-1610194352361-4c81a6a8967e",
+    "/imcLogo.jpg",
+    "/WMClogo.png",
     "/dfzLogo.jpg",
-    "https://images.unsplash.com/photo-1495805442109-bf1cf975750b",
+    "/facLogo.png",
     "/aavranLogo.jpg",
-    "https://images.unsplash.com/photo-1496753480864-3e588e0269b3",
-    "https://images.unsplash.com/photo-1613346945084-35cccc812dd5",
-    "https://images.unsplash.com/photo-1516681100942-77d8e7f9dd97"
+    "/litLogo.png",
+    "/quizLogo.png",
+    "/masqLogo.jpg"
   ];
 
   const handleImageLoad = () => {
