@@ -281,7 +281,7 @@ const Clubs = () => {
 
   const images = [
     "/imcLogo.jpg",
-    "/WMClogo.png",
+    "/wmcLogo.png",
     "/dfzLogo.jpg",
     "/facLogo.png",
     "/aavranLogo.jpg",
@@ -387,7 +387,7 @@ const Clubs = () => {
 
   return (
     <>
-    <div className="h-screen w-screen bg-black m-0 overflow-hidden relative">
+    <div className="h-screen w-screen bg-zinc-950 m-0 overflow-hidden relative">
      
       <div
         ref={trackRef}
@@ -420,17 +420,20 @@ const Clubs = () => {
             >
               <Link to={clubNames[index].href}>
               <img
-                className={`w-[40vmin] h-[60vmin] object-cover rounded-lg shadow-2xl
-                  transition-all duration-500 ease-in-out
-                  ${hoveredIndex === index ? 'scale-110' : ''}
-                  ${activeImageIndex === index
-                    ? 'fixed top-0 left-0 w-screen h-screen z-50 object-cover'
-                    : ''}`}
-                src={`${src}?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1770&q=80`}
-                draggable="false"
-                alt={`Track image ${index + 1}`}
-                onLoad={handleImageLoad}
-              />
+  className={`w-[40vmin] h-[60vmin] object-contain rounded-lg shadow-2xl
+    transition-all duration-500 ease-in-out border-2 border-neutral-800 bg-black
+    ${hoveredIndex === index ? 'scale-110' : ''}
+    ${activeImageIndex === index
+      ? 'fixed top-0 left-0 w-screen h-screen z-50 object-cover'
+      : ''}`}
+  src={src}
+  draggable="false"
+  alt={`Track image ${index + 1}`}
+  onLoad={handleImageLoad}
+  onError={(e) => {
+    console.error(`Image failed to load: ${src}`); // Log errors for debugging
+  }}
+/>
              </Link>
               {isInteractive && hoveredIndex === index && (
                  
