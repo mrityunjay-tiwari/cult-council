@@ -284,7 +284,7 @@ const Clubs = () => {
     "https://images.unsplash.com/photo-1610194352361-4c81a6a8967e",
     "https://images.unsplash.com/photo-1618202133208-2907bebba9e1",
     "https://images.unsplash.com/photo-1495805442109-bf1cf975750b",
-    "/aavranLogo.jpg",
+    "https://drive.google.com/file/d/1gXQKDDhMhG6AWSah5rM_mZfra1P9mM-Y/view?usp=sharing",
     "https://images.unsplash.com/photo-1496753480864-3e588e0269b3",
     "https://images.unsplash.com/photo-1613346945084-35cccc812dd5",
     "https://images.unsplash.com/photo-1516681100942-77d8e7f9dd97"
