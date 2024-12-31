@@ -16,7 +16,7 @@ const AavranHelm = () => {
     {
       name: 'Mehul Kassi',
       role: 'Secretary',
-      avatar: '/mehulAavran.HEIC',
+      avatar: '/mehulAavran.jpg',
       color: 'bg-purple-100',
     },
     {

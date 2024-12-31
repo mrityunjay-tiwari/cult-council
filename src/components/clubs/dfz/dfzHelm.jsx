@@ -9,20 +9,20 @@ const DfzHelm = () => {
   const teamMembers = [
     {
       name: 'Rishika',
-      role: '/RishikaDfz.jpg',
-      avatar: 'PP.jpg',
+      role: 'Joint Secretary',
+      avatar: '/RishikaDfz.jpg',
       color: 'bg-blue-100',
     },
     {
       name: 'Yuvraj Solanki',
-      role: 'Tech Manager',
-      avatar: 'PP.jpg',
+      role: 'Secretary',
+      avatar: '/YuvrajDfz.png',
       color: 'bg-purple-100',
     },
     {
       name: 'Sri Ram',
-      role: 'Teach Manager',
-      avatar: 'PP.jpg',
+      role: 'Joint Secretary',
+      avatar: '/SriramDfz.jpg',
       color: 'bg-pink-100',
     },
   ];

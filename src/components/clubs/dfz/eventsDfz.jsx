@@ -1,19 +1,9 @@
 import React, { useEffect, useRef, useState } from "react";
 
 const images = [
-  "/music.jpg",
-  "/music.jpg",
-  "/music.jpg",
-  "/music.jpg",
-  "/music.jpg",
-  "/music.jpg",
-  "/music.jpg",
-  "/music.jpg",
-  "/music.jpg",
-  "/music.jpg",
-  "/music.jpg",
-  "/music.jpg",
-  "/music.jpg",
+  "/dfz1.jpg",
+  "/dfz2.jpg",
+  "/dfz3.jpg",
 ];
 
 const DfzCarousel = () => {
