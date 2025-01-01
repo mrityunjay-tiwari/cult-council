@@ -16,7 +16,7 @@ const LitHelm = () => {
     {
       name: 'Gunjit Jain',
       role: 'Secretary',
-      avatar: '/secyLit.jpg',
+      avatar: '/litSecy.jpg',
       color: 'bg-purple-100',
     },
     {
