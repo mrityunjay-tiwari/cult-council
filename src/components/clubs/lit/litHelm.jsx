@@ -8,19 +8,19 @@ const LitHelm = () => {
 
   const teamMembers = [
     {
-      name: 'LitJtSecyName',
+      name: 'Satwik Srivastava',
       role: 'Joint Secretary',
       avatar: '/satwikJtsecyLit.jpg',
       color: 'bg-blue-100',
     },
     {
-      name: 'LitSecyName',
+      name: 'Gunjit Jain',
       role: 'Secretary',
       avatar: '/secyLit.jpg',
       color: 'bg-purple-100',
     },
     {
-      name: 'LitJtSecyName',
+      name: 'Laavnya Srivastava',
       role: 'Joint Secretary',
       avatar: '/laavnyaJtsecyLit.jpg', 
       color: 'bg-pink-100',
