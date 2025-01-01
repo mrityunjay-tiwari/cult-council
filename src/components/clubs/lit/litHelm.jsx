@@ -10,19 +10,19 @@ const LitHelm = () => {
     {
       name: 'LitJtSecyName',
       role: 'Joint Secretary',
-      avatar: '/jtsecylit.jpg',
+      avatar: '/satwikJtsecyLit.jpg',
       color: 'bg-blue-100',
     },
     {
       name: 'LitSecyName',
       role: 'Secretary',
-      avatar: '/secylit.jpg',
+      avatar: '/secyLit.jpg',
       color: 'bg-purple-100',
     },
     {
       name: 'LitJtSecyName',
       role: 'Joint Secretary',
-      avatar: '/jtsecylit.jpg',
+      avatar: '/laavnyaJtsecyLit.jpg', 
       color: 'bg-pink-100',
     },
   ];
