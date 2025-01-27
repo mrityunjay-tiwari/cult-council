@@ -265,11 +265,11 @@ const events = [
     images: [
       "https://ik.imagekit.io/mrityunjay/events6.jpeg?updatedAt=1737970312984",
       "https://ik.imagekit.io/mrityunjay/dfz3.jpg?updatedAt=1737970280148",
-      "https://ik.imagekit.io/mrityunjay/events4.jpeg?updatedAt=1737970312686",
+      "https://ik.imagekit.io/mrityunjay/fac39.jpg?updatedAt=1737970279591",
       "https://ik.imagekit.io/mrityunjay/fac17.jpg?updatedAt=1737970280142",
       "https://ik.imagekit.io/mrityunjay/events3.jpeg?updatedAt=1737970312510",
       "https://ik.imagekit.io/mrityunjay/fac10.jpg?updatedAt=1737970279474",
-      "https://ik.imagekit.io/mrityunjay/events2.jpeg?updatedAt=1737970312457",
+      "https://ik.imagekit.io/mrityunjay/fac12.jpg?updatedAt=1737970277874",
       "https://ik.imagekit.io/mrityunjay/fac26.jpg?updatedAt=1737970281533",
       "https://ik.imagekit.io/mrityunjay/events5.jpeg?updatedAt=1737970312280",
       "https://ik.imagekit.io/mrityunjay/dfz2.jpg?updatedAt=1737970289464",
