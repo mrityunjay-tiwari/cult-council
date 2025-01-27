@@ -1,19 +1,17 @@
 import React, { useEffect, useRef, useState } from "react";
 
 const images = [
-  "/music.jpg",
-  "/music.jpg",
-  "/music.jpg",
-  "/music.jpg",
-  "/music.jpg",
-  "/music.jpg",
-  "/music.jpg",
-  "/music.jpg",
-  "/music.jpg",
-  "/music.jpg",
-  "/music.jpg",
-  "/music.jpg",
-  "/music.jpg",
+  "https://ik.imagekit.io/mrityunjay/12.jpg?updatedAt=1737984457859",
+  "https://ik.imagekit.io/mrityunjay/10.jpg?updatedAt=1737984015988",
+  "https://ik.imagekit.io/mrityunjay/11.jpg?updatedAt=1737984015867",
+  "https://ik.imagekit.io/mrityunjay/11.jpg?updatedAt=1737983636552",
+  "https://ik.imagekit.io/mrityunjay/9.jpg?updatedAt=1737983636305",
+  "https://ik.imagekit.io/mrityunjay/10.jpg?updatedAt=1737983636218",
+  "https://ik.imagekit.io/mrityunjay/13.jpg?updatedAt=1737983636120",
+  "https://ik.imagekit.io/mrityunjay/13.jpg?updatedAt=1737983636120",
+  "https://ik.imagekit.io/mrityunjay/6.jpg?updatedAt=1737983832789",
+  "https://ik.imagekit.io/mrityunjay/7.jpg?updatedAt=1737983832603",
+  "https://ik.imagekit.io/mrityunjay/8.jpg?updatedAt=1737983753467",
 ];
 
 const AavranCarousel = () => {

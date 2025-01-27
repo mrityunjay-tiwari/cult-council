@@ -32,14 +32,13 @@ export function Wmc() {
       Western Music Club
     </h1>
 
-    <h2 className="mb-4 text-slate-400 text-3xl md:text-6xl font-medium">
+    <h2 className="mb-4 text-slate-400 text-3 xl md:text-6xl font-medium">
     Vibrant Vibes of IIT BHU
     </h2>
 
     <p className="text-slate-100 font-light text-sm md:text-base leading-relaxed max-w-2xl mx-auto">
-      The Indian Music Club, IIT BHU brings together music enthusiasts to explore, create, and
-      celebrate diverse musical traditions. From classical to contemporary, the club fosters a vibrant
-      community where students collaborate, perform, and cultivate their passion for music.
+     
+Western Music Club IIT BHU celebrates the joy of music through genres like rock, jazz, and classical. We provide a platform for music enthusiasts to showcase their talent and nurture a passion for Western music.
     </p>
   </motion.div>
 </LampContainer>

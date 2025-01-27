@@ -5,7 +5,6 @@ const images = [
   "https://ik.imagekit.io/mrityunjay/stageplay1.jpg?updatedAt=1737978254610",
   "https://ik.imagekit.io/mrityunjay/stageplay2.jpg?updatedAt=1737978254420",
   "https://ik.imagekit.io/mrityunjay/stageplay3.jpg?updatedAt=1737978253791",
-  "https://ik.imagekit.io/mrityunjay/nukkad2.jpg?updatedAt=1737978153873",
   "https://ik.imagekit.io/mrityunjay/nukkad3.jpg?updatedAt=1737978153453",
   "https://ik.imagekit.io/mrityunjay/nukkad4.jpg?updatedAt=1737978153161",
   "https://ik.imagekit.io/mrityunjay/nukkad6.jpg?updatedAt=1737978153106",

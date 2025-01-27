@@ -37,9 +37,7 @@ export function Masq() {
     </h2>
 
     <p className="text-slate-100 font-light text-sm md:text-base leading-relaxed max-w-2xl mx-auto">
-      The Indian Music Club, IIT BHU brings together music enthusiasts to explore, create, and
-      celebrate diverse musical traditions. From classical to contemporary, the club fosters a vibrant
-      community where students collaborate, perform, and cultivate their passion for music.
+    Theatre Club IIT BHU explores the art forms of mime, stage play, and nukkad. We teach beginners, helping them develop their acting skills while fostering creativity and a deep love for theatre.
     </p>
   </motion.div>
 </LampContainer>

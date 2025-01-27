@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
 
 const medals = [
-  { id: 1, src: '/gold.png', title: 'Nrityanjali(Group Dance)', year: '', location: 'Waves, BITS Goa' },
-  { id: 2, src: '/silver.png', title: 'Bliss', year: '', location: 'Kashiyatra' },
+  { id: 1, src: '/gold.png', title: 'Duet', year: '', location: 'Inter IIT Cult Meet 7.0' },
+  { id: 2, src: '/bronze.png', title: 'Overall Dance', year: '', location: 'Inter IIT Cult Meet 7.0' },
   { id: 3, src: '/silver.png', title: 'Heelturn(Group Dance)', year: '', location: 'Anwesha, IIT Patna' },
   { id: 4, src: '/bronze.png', title: 'Ecstacy', year: '', location: 'Kashiyatra' },
   

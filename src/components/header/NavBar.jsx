@@ -140,7 +140,7 @@ const NavigationMenu = () => {
     
     gsap.to(element, {
       xPercent: -50, // Scroll from 0% to -100%
-      duration: 22,   // Animation duration (22 seconds)
+      duration: 50,   // Animation duration (22 seconds)
       ease: 'linear', // Linear scroll
       repeat: -1,     // Infinite loop
     });
@@ -188,7 +188,7 @@ const NavigationMenu = () => {
                 style={{ fontFamily: "'Agdasima', sans-serif" }}
                 onMouseEnter={handleMouseEnter}
                 onMouseLeave={handleMouseLeave}
-                className="text-[85px] h-full text-center text-gray-200 hover:text-white"
+                className="text-[65px] h-full text-center text-gray-200 hover:text-white"
               >
                 {link.label}
               </h2>
@@ -200,7 +200,7 @@ const NavigationMenu = () => {
                 style={{ fontFamily: "'Agdasima', sans-serif" }}
                 onMouseEnter={handleMouseEnter}
                 onMouseLeave={handleMouseLeave}
-                className="text-[100px] h-full text-center text-gray-100 hover:text-white"
+                className="text-[65px] h-full text-center text-gray-100 hover:text-white"
               >
                 {link.label}
               </h2>

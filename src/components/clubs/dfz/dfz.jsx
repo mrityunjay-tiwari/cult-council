@@ -35,9 +35,8 @@ export function Dfz() {
     </h2>
 
     <p className="text-slate-100 font-light text-sm md:text-base leading-relaxed max-w-2xl mx-auto">
-      The Indian Music Club, IIT BHU brings together music enthusiasts to explore, create, and
-      celebrate diverse musical traditions. From classical to contemporary, the club fosters a vibrant
-      community where students collaborate, perform, and cultivate their passion for music.
+      
+    Dance Freakz IIT BHU fosters a love for dance through street battles, duets, group dance, and various Western and Indian dance forms. We teach beginners, helping them develop skills and passion for the art.
     </p>
   </motion.div>
 </LampContainer>

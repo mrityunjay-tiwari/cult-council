@@ -244,7 +244,7 @@ const WelcomePage = () => {
 
       {/* Logos on the top right */}
       <div className="absolute top-0 right-0 p-4 flex items-center gap-4">
-        <img src="/councillogo.png" alt="Logo 1" className="h-12 w-12 object-contain" />
+        <img src="/councillogo.png" alt="Logo 1" className="h-12 w-12 object-contain" /> {/*To add hyperlink to IIT BHu Website*/}
         <div className="border-l-2 border-neutral-400 h-10 mx-2"></div>
         <img src="/collegelogo.png" alt="Logo 2" className="h-12 w-12 object-contain" />
       </div>
