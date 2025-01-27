@@ -402,21 +402,21 @@ const VideoTeamDisplay = () => {
 
   const teamMembers = [
     {
-      name: 'Mrityunjay Tiwari',
-      role: 'Tech Head',
-      avatar: 'PP.jpg',
+      name: 'Kridahi Narsimha',
+      role: 'Joint Head',
+      avatar: './7.jpg',
       color: 'bg-blue-100',
     },
     {
-      name: 'Ansh Yadav',
-      role: 'Tech Manager',
-      avatar: 'PP.jpg',
+      name: 'Kushagra Verma',
+      role: 'Video Head',
+      avatar: './6.jpg',
       color: 'bg-purple-100',
     },
     {
-      name: 'Nishant',
-      role: 'Teach Manager',
-      avatar: 'PP.jpg',
+      name: 'Utkarsh Singh Rana',
+      role: 'Joint Head',
+      avatar: './8.jpg',
       color: 'bg-pink-100',
     },
   ];

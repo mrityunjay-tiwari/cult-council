@@ -14,15 +14,15 @@ const ImcHelm = () => {
       color: 'bg-blue-100',
     },
     {
-      name: 'Mehul Goyal',
+      name: 'Vinayak Tyagi',
       role: 'Secretary',
-      avatar: '/mehulimc.jpg',
+      avatar: '/VinayakImc.jpg',
       color: 'bg-purple-100',
     },
     {
-      name: 'Mehul Goyal',
+      name: 'Punyansh',
       role: 'Joint Secretary',
-      avatar: '/mehulimc.jpg',
+      avatar: '/jtsecyimc2.jpg',
       color: 'bg-pink-100',
     },
   ];
@@ -81,8 +81,8 @@ const ImcHelm = () => {
 
       <div className="relative max-w-6xl">
         <div className="text-center mb-8">
-          <h2 className="text-3xl md:text-4xl font-semibold text-slate-200">Tech Team</h2>
-          <p className="text-gray-600 mt-2">Meet our Tech Guys</p>
+          <h2 className="text-3xl md:text-4xl font-semibold text-slate-200">Our Helm</h2>
+          <p className="text-gray-600 mt-2">Meet our Helm Team</p>
         </div>
 
         <div className="flex justify-center items-center -space-x-8 flex-wrap">

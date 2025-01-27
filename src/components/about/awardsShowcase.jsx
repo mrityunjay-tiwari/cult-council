@@ -5,27 +5,33 @@ const MedalShowcase = () => {
 
   const medals = {
     gold: [
-      { id: 'g1', event: 'Classical Dance Competition 2023', position: '1st' },
-      { id: 'g2', event: 'Music Band Showdown', position: '1st' },
+      { id: 'g1', event: 'Nukkad, Inter IIT Cultural Meet,2017', position: '1st' },
+      { id: 'g2', event: 'Overall Inter IIT Cltural Meet, 2017', position: '1st' },
+      { id: 'g3', event: 'Unplugged Band, Effervesence, IIT Allahabad', position: '1st' },
+      { id: 'g4', event: 'Nrityanjali, Waves, BITS GOA', position: '1st' },
     ],
     silver: [
-      { id: 's1', event: 'Photography Exhibition', position: '2nd' },
+      { id: 's1', event: 'Do-It(Duo Dance), Inter IIT Cultural Meet', position: '2nd' },
       { id: 's2', event: 'Solo Singing Competition', position: '2nd' },
       { id: 's3', event: 'Fashion Show', position: '2nd' },
       { id: 's4', event: 'Short Film Festival', position: '2nd' },
+      { id: 's5', event: 'Kavyanjali, Inter IIT Cult Meet', position: '2nd' },
     ],
     bronze: [
-      { id: 'b1', event: 'Debate Competition', position: '3rd' },
-      { id: 'b2', event: 'Art Installation', position: '3rd' },
-      { id: 'b3', event: 'Street Play', position: '3rd' },
-      { id: 'b4', event: 'Creative Writing', position: '3rd' },
+      { id: 'b1', event: 'Cypher Hustle(Street Battle), Inter IIT Cult Meet', position: '3rd' },
+      { id: 'b2', event: 'TV Quiz, Antaragni', position: '3rd' },
+      { id: 'b3', event: 'Battle Front(English Debate)', position: '3rd' },
+      { id: 'b4', event: 'Hindi Debate', position: '3rd' },
+      { id: 'b5', event: 'Ashubhasan', position: '3rd' },
+      { id: 'b6', event: 'Hindi Extempore, Antaragni', position: '3rd' },
+      { id: 'b7', event: "English Poetry Writing, KY'18", position: '3rd' },
     ],
   };
 
   const MedalCard = ({ medal, color, shadowColor }) => (
     <div
       className={`relative w-24 h-24 xs:w-28 xs:h-28 sm:w-32 sm:h-32 rounded-full flex flex-col items-center justify-center shadow-md transition-transform transform
-        ${hoveredMedal === medal.id ? 'scale-110 shadow-2xl' : 'scale-100'}`}
+        ${hoveredMedal === medal.id ? 'scale-110 shadow-2xl z-10' : 'scale-100'}`}
       style={{
         background: `radial-gradient(circle, ${color} 0%, ${shadowColor} 70%)`,
         boxShadow: hoveredMedal === medal.id ? `0 0 30px ${color}, 0 0 60px ${shadowColor}` : '',

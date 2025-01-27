@@ -276,7 +276,7 @@ const Clubs = () => {
     { label: 'AVRN', fullForm: 'Aavran', href: '/clubs/aavran' },
     { label: 'LIT', fullForm: 'Literary Club', href: '/clubs/lit' },
     { label: 'QUIZ', fullForm: 'Quiz Club', href: '/clubs/quiz' },
-    { label: 'MASQ', fullForm: 'Masquerades Club', href: '/clubs/masq' },
+    { label: 'MASQ', fullForm: 'Theatre Club', href: '/clubs/masq' },
   ];
 
   const images = [

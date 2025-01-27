@@ -17,21 +17,29 @@ export function Fac() {
   return (
     <>
     <LampContainer>
-      <motion.h1
-        initial={{ opacity: 0.5, y: 100 }}
-        whileInView={{ opacity: 1, y: 0 }}
-        transition={{
-          delay: 0.3,
-          duration: 0.8,
-          ease: "easeInOut",
-        }}
-        className="mt-8 mb-8 bg-gradient-to-br from-slate-300 to-slate-500 py-6 bg-clip-text text-center text-4xl font-medium tracking-tight text-transparent md:text-7xl"
-      >
-        Fine Arts Club <br /> <h1 className='md:text-6xl text-3xl'>Creating, Inspiring, Expressing By Art</h1>
-      </motion.h1>
-      <h1 className='text-white font-light'>Here we will have a very brief description about the club in maximum 30-40 words.</h1>
-    </LampContainer>
-  
+  <motion.div
+    initial={{ opacity: 0.5, y: 100 }}
+    whileInView={{ opacity: 1, y: 0 }}
+    transition={{
+      delay: 0.3,
+      duration: 0.8,
+      ease: "easeInOut",
+    }}
+    className="text-center"
+  >
+    <h1 className="mt-8 mb-4 bg-gradient-to-br from-slate-300 to-slate-500 py-6 bg-clip-text text-4xl font-medium tracking-tight text-transparent md:text-7xl">
+      Fine Arts Club
+    </h1>
+
+    <h2 className="mb-4 text-slate-400 text-3xl md:text-6xl font-medium">
+    Creating, Inspiring, Expressing By Art
+    </h2>
+
+    <p className="text-slate-100 font-light text-sm md:text-base leading-relaxed max-w-2xl mx-auto">
+    Fine Arts Club,IIT BHU is a vibrant community dedicated to nurturing creativity and artistic expression. It serves as a platform for individuals to explore and showcase their talents in various art forms such as painting, sketching, charcoal art, 3D craft and much more.
+    </p>
+  </motion.div>
+</LampContainer>
     
     
     <FacMedalShowcase />

@@ -483,21 +483,27 @@ const VideoTeamDisplay = () => {
 
   const teamMembers = [
     {
-      name: 'Mrityunjay Tiwari',
+      name: 'Laxmi Kumari',
       role: 'Tech Head',
-      avatar: 'PP.jpg',
+      avatar: './laxmi.jpeg',
       color: 'bg-blue-100',
     },
     {
-      name: 'Nishant Kumar',
-      role: 'Tech Manager',
-      avatar: 'PP.jpg',
+      name: 'Mrityunjay Tiwari',
+      role: 'Tech Head',
+      avatar: './PP.jpg',
       color: 'bg-purple-100',
     },
     {
       name: 'Ansh Yadav',
+      role: 'Tech Head',
+      avatar: './ansh.jpeg',
+      color: 'bg-pink-100',
+    },
+    {
+      name: 'Nishant Rihan',
       role: 'Teach Manager',
-      avatar: 'PP.jpg',
+      avatar: './nishant.jpeg',
       color: 'bg-pink-100',
     },
   ];

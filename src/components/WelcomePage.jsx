@@ -9,7 +9,7 @@ import { AnimatePresence, motion } from "framer-motion";
 const WelcomePage = () => {
   const blobRef = useRef(null);
 
-  const words = ["Sing", "Dance", "Film", "Create"];
+  const words = ["Sing", "Dance", "Create", "Do Theatre", "Play With Words", "Nurture Fashion", "Quiz"];
 
   useGSAP(() => {
     gsap.to('#cult', {opacity: 1, duration: 1.5, delay: 1.5, translateY: 250})
@@ -83,16 +83,16 @@ const WelcomePage = () => {
 
       <div className="px-4 w-auto h-auto max-sm:text-center max-sm:px-2">
         <div className="flex h-[10rem] max-sm:flex-col max-sm:h-auto max-sm:items-center max-sm:gap-2">
-          <div className="h-auto w-auto text-[100px] pr-8 font-normal text-neutral-600 dark:text-neutral-400 max-sm:text-[50px] max-sm:pr-0">
+          <div className="h-auto w-auto text-[80px] pr-8 font-normal text-neutral-400 dark:text-neutral-400 max-sm:text-[50px] max-sm:pr-0">
                We
           </div>
-          <div className="h-auto w-auto text-[100px] font-normal text-neutral-600 dark:text-neutral-400 max-sm:text-[50px]">
+          <div className="h-auto w-auto text-[80px] font-normal text-neutral-400 dark:text-neutral-400 max-sm:text-[50px]">
                <FlipWords words={words} /> <br />
           </div>
         </div>
 
-        <div className="text-[100px] mx-auto font-normal text-neutral-600 dark:text-neutral-400 max-sm:text-[50px]">
-          at Cult Council of IIT BHU
+        <div className="text-[80px] mx-auto font-normal text-neutral-400 dark:text-neutral-400 max-sm:text-[50px]">
+          at Cultural Council of IIT (BHU), Varanasi
         </div>
       </div>
     </div>
@@ -129,16 +129,13 @@ const FlipWords = ({ words, duration = 1500, className }) => {
         onAnimationComplete={() => { setIsAnimating(false); }}
         className={cn("font-bold", className)}
       >
-        {currentWord.split(" ").map((word, wordIndex) => (
-          <span key={`${word}-${wordIndex}`} className="flex">
-            {word.split("").map((letter, letterIndex) => (
-              <span key={`${letter}-${letterIndex}`} className="flex">
-                {letter}
-              </span>
-            ))}
-            {"\u00A0"}
+        <span className="flex">
+        {currentWord.split("-").map((letter, letterIndex) => (
+          <span key={`${letter}-${letterIndex}`} className="flex">
+            {letter}
           </span>
         ))}
+      </span>
       </motion.div>
     </AnimatePresence>
   );
