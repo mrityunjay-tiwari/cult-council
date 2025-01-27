@@ -272,9 +272,9 @@ const events = [
       "https://ik.imagekit.io/mrityunjay/events2.jpeg?updatedAt=1737970312457",
       "https://ik.imagekit.io/mrityunjay/fac26.jpg?updatedAt=1737970281533",
       "https://ik.imagekit.io/mrityunjay/events5.jpeg?updatedAt=1737970312280",
-      "https://ik.imagekit.io/mrityunjay/dfz2.jpg?updatedAt=1737970289464",
+      "https://ik.imagekit.io/mrityunjay/mime2.jpg?updatedAt=1737977999813",
       "https://ik.imagekit.io/mrityunjay/events1.jpeg?updatedAt=1737970310519",
-      "https://ik.imagekit.io/mrityunjay/dfz1.jpg?updatedAt=1737970292318",
+      "https://ik.imagekit.io/mrityunjay/fac31.jpg?updatedAt=1737975847648", 
       "https://ik.imagekit.io/mrityunjay/events7.jpeg?updatedAt=1737970309745",
     ]
   },
