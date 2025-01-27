@@ -1,10 +1,11 @@
 import React, { useState } from 'react';
 
 const medals = [
-  { id: 1, src: '/gold.png', title: 'Gold Medal', year: '2021', location: 'Tokyo, Japan' },
-  { id: 2, src: '/silver.png', title: 'Silver Medal', year: '2019', location: 'Paris, France' },
-  { id: 3, src: '/bronze.png', title: 'Bronze Medal', year: '2020', location: 'London, UK' },
-  { id: 4, src: '/gold.png', title: 'Gold Medal', year: '2022', location: 'Beijing, China' },
+  { id: 1, src: '/gold.png', title: 'Nrityanjali(Group Dance)', year: '', location: 'Waves, BITS Goa' },
+  { id: 2, src: '/silver.png', title: 'Bliss', year: '', location: 'Kashiyatra' },
+  { id: 3, src: '/silver.png', title: 'Heelturn(Group Dance)', year: '', location: 'Anwesha, IIT Patna' },
+  { id: 4, src: '/bronze.png', title: 'Ecstacy', year: '', location: 'Kashiyatra' },
+  
 ];
 
 const DfzMedalShowcase = () => {

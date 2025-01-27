@@ -42,7 +42,7 @@ export function Aavran() {
 </LampContainer>
     
     
-    <AavranMedalShowcase />
+    {/* <AavranMedalShowcase /> */}
     <AavranCarousel />
     <AavranHelm />
     <FloatingMusicIcons 

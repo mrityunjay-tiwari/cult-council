@@ -8,21 +8,21 @@ const AavranHelm = () => {
 
   const teamMembers = [
     {
-      name: 'Sanchita Kalra',
+      name: 'Mehul Kassi',
       role: 'Joint Secretary',
-      avatar: '/sanchitaAavran.jpg',
+      avatar: 'https://ik.imagekit.io/mrityunjay/mehulAavran.jpg?updatedAt=1737978833148',
       color: 'bg-blue-100',
     },
     {
       name: 'Sanchita Kalra',
       role: 'Secretary',
-      avatar: '/mehulAavran.jpg',
+      avatar: 'https://ik.imagekit.io/mrityunjay/sanchitaAavran.jpg?updatedAt=1737978832707',
       color: 'bg-purple-100',
     },
     {
       name: 'Smarth Sood',
       role: 'Joint Secretary',
-      avatar: '/smarthAavran.jpeg',
+      avatar: 'https://ik.imagekit.io/mrityunjay/smarthAavran.jpeg?updatedAt=1737978829085',
       color: 'bg-pink-100',
     },
   ];

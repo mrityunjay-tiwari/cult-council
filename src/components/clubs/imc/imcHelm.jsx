@@ -10,19 +10,19 @@ const ImcHelm = () => {
     {
       name: 'Mehul Goyal',
       role: 'Joint Secretary',
-      avatar: '/mehulimc.jpg',
+      avatar: 'https://ik.imagekit.io/mrityunjay/mehulimc.jpg?updatedAt=1737978885902',
       color: 'bg-blue-100',
     },
     {
       name: 'Vinayak Tyagi',
       role: 'Secretary',
-      avatar: '/VinayakImc.jpg',
+      avatar: 'https://ik.imagekit.io/mrityunjay/VinayakImc.jpg?updatedAt=1737978885928',
       color: 'bg-purple-100',
     },
     {
-      name: 'Punyansh',
+      name: 'Punyansh Juneja',
       role: 'Joint Secretary',
-      avatar: '/jtsecyimc2.jpg',
+      avatar: 'https://ik.imagekit.io/mrityunjay/punyansh_imc.png?updatedAt=1737978886150',
       color: 'bg-pink-100',
     },
   ];

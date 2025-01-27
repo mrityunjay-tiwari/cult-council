@@ -8,21 +8,21 @@ const WmcHelm = () => {
 
   const teamMembers = [
     {
-      name: 'Kalyani',
+      name: 'Kalyani Pande',
       role: 'Joint Secretary',
-      avatar: '/KalyaniWMC.jpg',
+      avatar: 'https://ik.imagekit.io/mrityunjay/SecyWmc.jpg?updatedAt=1737979509777',
       color: 'bg-blue-100',
     },
     {
-      name: 'Anubhav',
+      name: 'Anubhav Bhushan',
       role: 'Secretary',
-      avatar: '/SecyWmc.jpg',
+      avatar: 'https://ik.imagekit.io/mrityunjay/SecyWmc.jpg?updatedAt=1737979509777',
       color: 'bg-purple-100',
     },
     {
-      name: 'JtSecyWmcName',
+      name: 'Devraj Singh Bhogal',
       role: 'Joint Secretary',
-      avatar: '/JtSecyWmc.jpg',
+      avatar: 'https://ik.imagekit.io/mrityunjay/JtSecyWmc.jpg?updatedAt=1737979508967',
       color: 'bg-pink-100',
     },
   ];

@@ -1,10 +1,9 @@
 import React, { useState } from 'react';
 
 const medals = [
-  { id: 1, src: '/gold.png', title: 'Gold Medal', year: '2021', location: 'Tokyo, Japan' },
-  { id: 2, src: '/silver.png', title: 'Silver Medal', year: '2019', location: 'Paris, France' },
-  { id: 3, src: '/bronze.png', title: 'Bronze Medal', year: '2020', location: 'London, UK' },
-  { id: 4, src: '/gold.png', title: 'Gold Medal', year: '2022', location: 'Beijing, China' },
+  { id: 1, src: '/gold.png', title: 'Unplugged Band', year: '', location: 'Effervescence, IIIT Allahabad' },
+  { id: 2, src: '/gold.png', title: 'Band Competition', year: ' ', location: 'Anwesha, IIT Patna' },
+  { id: 3, src: '/bronze.png', title: 'Axetacy Guitar solo', year: '', location: '' },
 ];
 
 const WmcMedalShowcase = () => {

@@ -8,21 +8,21 @@ const HelmMasq = () => {
 
   const teamMembers = [
     {
-      name: 'Sagar',
+      name: 'Shaun Aryan',
       role: 'Joint Secretary',
-      avatar: '/SagarMasq.jpg',
+      avatar: 'https://ik.imagekit.io/mrityunjay/ShaunMasq.jpg?updatedAt=1737979105963',
       color: 'bg-blue-100',
     },
     {
-      name: 'Shaun',
+      name: 'Sagar Ahirrao',
       role: 'Secretary',
-      avatar: '/ShaunMasq.jpg',
+      avatar: 'https://ik.imagekit.io/mrityunjay/SagarMasq.jpg?updatedAt=1737979105840',
       color: 'bg-purple-100',
     },
     {
-      name: 'Shivansh',
+      name: 'Shivansh Pandey',
       role: 'Joint Secretary',
-      avatar: '/ShivanshMasq.jpg',
+      avatar: 'https://ik.imagekit.io/mrityunjay/ShivanshMasq.jpg?updatedAt=1737979105591',
       color: 'bg-pink-100',
     },
   ];

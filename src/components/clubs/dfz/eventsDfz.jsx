@@ -1,9 +1,16 @@
 import React, { useEffect, useRef, useState } from "react";
 
 const images = [
-  "/dfz1.jpg",
-  "/dfz2.jpg",
-  "/dfz3.jpg",
+  "https://ik.imagekit.io/mrityunjay/dfz5.jpeg?updatedAt=1737975509451",
+  "https://ik.imagekit.io/mrityunjay/dfz7.jpeg?updatedAt=1737975507991",
+  "https://ik.imagekit.io/mrityunjay/dfz4.jpeg?updatedAt=1737975507105",
+  "https://ik.imagekit.io/mrityunjay/dfz6.jpeg?updatedAt=1737975507061",
+  "https://ik.imagekit.io/mrityunjay/dfz9.jpeg?updatedAt=1737975506060",
+  "https://ik.imagekit.io/mrityunjay/dfz8.jpeg?updatedAt=1737975503802",
+  "https://ik.imagekit.io/mrityunjay/dfz3.jpg?updatedAt=1737975504229",
+  "https://ik.imagekit.io/mrityunjay/events6.jpeg?updatedAt=1737970312984",
+  "https://ik.imagekit.io/mrityunjay/dfz1.jpg?updatedAt=1737975716128",
+  "https://ik.imagekit.io/mrityunjay/dfz2.jpg?updatedAt=1737975718229",
 ];
 
 const DfzCarousel = () => {

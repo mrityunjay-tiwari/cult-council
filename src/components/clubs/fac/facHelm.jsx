@@ -10,19 +10,19 @@ const FacHelm = () => {
     {
       name: 'Vedant Zilpe',
       role: 'Joint Secretary',
-      avatar: '/VedantZilpeFac.jpg',
+      avatar: 'https://ik.imagekit.io/mrityunjay/VedantZilpeFac.jpg?updatedAt=1737979239443',
       color: 'bg-blue-100',
     },
     {
       name: 'Aditya Raut',
       role: 'Secretary',
-      avatar: '/AdityaRautFac.jpg',
+      avatar: 'https://ik.imagekit.io/mrityunjay/AdityaRautFac.jpg?updatedAt=1737979266576',
       color: 'bg-purple-100',
     },
     {
       name: 'Shrishti Singh',
       role: 'Joint Secretary',
-      avatar: '/ShristiSinghFac.jpg',
+      avatar: 'https://ik.imagekit.io/mrityunjay/ShristiSinghFac.jpg?updatedAt=1737979240535',
       color: 'bg-pink-100',
     },
   ];

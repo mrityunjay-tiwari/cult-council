@@ -188,7 +188,7 @@ const NavigationMenu = () => {
                 style={{ fontFamily: "'Agdasima', sans-serif" }}
                 onMouseEnter={handleMouseEnter}
                 onMouseLeave={handleMouseLeave}
-                className="text-[100px] h-full text-center text-gray-100 hover:text-white"
+                className="text-[85px] h-full text-center text-gray-200 hover:text-white"
               >
                 {link.label}
               </h2>

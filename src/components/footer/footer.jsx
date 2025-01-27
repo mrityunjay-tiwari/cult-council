@@ -67,13 +67,13 @@ function Footer() {
             </ul>
           </div>
 
-          {/* Contact and Social Links */}
+         
           <div className='flex flex-wrap gap-4 justify-center items-center'>
             <div className='flex items-center gap-2'><IoMail /> culturalcouncil.iitbhu.in</div>
             <div className='flex items-center'><RiInstagramFill /></div>
           </div>
 
-          {/* Logos and Address */}
+         
           <div className='flex flex-col items-center gap-4'>
             <div className='flex gap-4 items-center'>
               <Link to={'/'}>
@@ -102,7 +102,7 @@ function Footer() {
           </div>
         </div>
 
-        {/* Desktop View */}
+        
         <div className='hidden md:flex flex-col gap-8'>
           <div className='flex justify-around items-center'>
             <div className='flex gap-4'>

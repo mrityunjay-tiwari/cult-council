@@ -1,10 +1,10 @@
 import React, { useState } from 'react';
 
 const medals = [
-  { id: 1, src: '/gold.png', title: 'Gold Medal', year: '2021', location: 'Tokyo, Japan' },
-  { id: 2, src: '/silver.png', title: 'Silver Medal', year: '2019', location: 'Paris, France' },
-  { id: 3, src: '/bronze.png', title: 'Bronze Medal', year: '2020', location: 'London, UK' },
-  { id: 4, src: '/gold.png', title: 'Gold Medal', year: '2022', location: 'Beijing, China' },
+  { id: 1, src: '/gold.png', title: 'English Poetry Slam', year: '', location: 'Antaragni, IIT Kanpur' },
+  { id: 2, src: '/silver.png', title: 'Hindi Extempore', year: '', location: 'Antaragni, IIT Kanpur' },
+  { id: 3, src: '/silver.png', title: 'Hindi Prose Writing', year: '', location: "Kashiyatra'18" },
+  { id: 4, src: '/bronze.png', title: 'Hindi Debate', year: '2020', location: 'Antaragni, IIT Kanpur' },
 ];
 
 const LitMedalShowcase = () => {

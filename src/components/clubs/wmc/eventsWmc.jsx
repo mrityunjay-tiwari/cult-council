@@ -1,21 +1,21 @@
 import React, { useEffect, useRef, useState } from "react";
 
 const images = [
-  "/wmc/wmc1.JPG",
-  "/wmc/wmc2.JPG",
-  "/wmc/wmc4.jpg",
-  "/wmc/wmc5.jpeg",
-  "/wmc/wmc6.jpg",
-  "/wmc/wmc7.jpg",
-  "/wmc/wmc8.jpg",
-  "/wmc/wmc9.jpg",
-  "/wmc/wmc10.jpg",
-  "/wmc/wmc11.jpg",
-  "/wmc/wmc12.jpg",
-  "/wmc/wmc13.jpg",
-  "/wmc/wmc14.jpg",
-  "/wmc/wmc15.jpg",
-  "/wmc/wmc16.jpg",
+  "https://ik.imagekit.io/mrityunjay/wmc15.jpg?updatedAt=1737974989389",
+  "https://ik.imagekit.io/mrityunjay/wmc16.jpg?updatedAt=1737974988355",
+  "https://ik.imagekit.io/mrityunjay/wmc7.jpg?updatedAt=1737974987188",
+  "https://ik.imagekit.io/mrityunjay/wmc13.jpg?updatedAt=1737974987027",
+  "https://ik.imagekit.io/mrityunjay/wmc12.jpg?updatedAt=1737974987025",
+  "https://ik.imagekit.io/mrityunjay/wmc14.jpg?updatedAt=1737974986946",
+  "https://ik.imagekit.io/mrityunjay/wmc8.jpg?updatedAt=1737974982756",
+  "https://ik.imagekit.io/mrityunjay/wmc9.jpg?updatedAt=1737974981709",
+  "https://ik.imagekit.io/mrityunjay/wmc4.jpg?updatedAt=1737974981703",
+  "https://ik.imagekit.io/mrityunjay/wmc10.jpg?updatedAt=1737974981480",
+  "https://ik.imagekit.io/mrityunjay/wmc5.jpeg?updatedAt=1737974980970",
+  "https://ik.imagekit.io/mrityunjay/wmc6.jpg?updatedAt=1737974980808",
+  "https://ik.imagekit.io/mrityunjay/wmc11.jpg?updatedAt=1737974975642",
+  "https://ik.imagekit.io/mrityunjay/wmc11.jpg?updatedAt=1737974975642",
+  "https://ik.imagekit.io/mrityunjay/wmc1.JPG?updatedAt=1737974974865",
 ];
 
 const WmcCarousel = () => {

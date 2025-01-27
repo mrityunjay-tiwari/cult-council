@@ -8,21 +8,21 @@ const QuizHelm = () => {
 
   const teamMembers = [
     {
-      name: 'Priyadarshi',
+      name: 'Priyadarshi Annupam',
       role: 'Joint Secretary',
-      avatar: '/PriyadarshiQuiz.jpg',
+      avatar: 'https://ik.imagekit.io/mrityunjay/PriyadarshiQuiz.jpg?updatedAt=1737979640127',
       color: 'bg-blue-100',
     },
     {
-      name: 'Nishant Kumar',
+      name: 'Aayush Bhat',
       role: 'Secretary',
-      avatar: '/jtSecyQuiz1.jpg',
+      avatar: 'https://ik.imagekit.io/mrityunjay/jtSecyQuiz2.jpeg?updatedAt=1737979640147',
       color: 'bg-purple-100',
     },
     {
-      name: 'Ansh Yadav',
+      name: 'Avanish Dhapare',
       role: 'Joint Secretary',
-      avatar: '/jtSecyQuiz2.jpg',
+      avatar: 'https://ik.imagekit.io/mrityunjay/jtSecyQuiz1.jpeg?updatedAt=1737979640038',
       color: 'bg-pink-100',
     },
   ];

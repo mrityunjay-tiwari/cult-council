@@ -1,14 +1,14 @@
 import React, { useEffect, useRef, useState } from "react";
 
 const images = [
-  "/lit/lit1.jpg",
-  "/lit/lit2.jpg",
-  "/lit/lit3.jpg",
-  "/lit/lit4.jpg",
-  "/lit/lit5.jpg",
-  "/lit/lit6.jpg",
-  "/lit/lit7.jpg",
-  "/lit/lit8.jpg",
+  "https://ik.imagekit.io/mrityunjay/lit6.jpg?updatedAt=1737977102165",
+  "https://ik.imagekit.io/mrityunjay/lit5.jpg?updatedAt=1737977101754",
+  "https://ik.imagekit.io/mrityunjay/lit4.jpg?updatedAt=1737977101600",
+  "https://ik.imagekit.io/mrityunjay/lit8.jpg?updatedAt=1737977101645",
+  "https://ik.imagekit.io/mrityunjay/lit7.jpg?updatedAt=1737977101636",
+  "https://ik.imagekit.io/mrityunjay/lit3.jpg?updatedAt=1737977101366",
+  "https://ik.imagekit.io/mrityunjay/lit2.jpg?updatedAt=1737977100619",
+  "https://ik.imagekit.io/mrityunjay/lit1.jpg?updatedAt=1737977100477",
 ];
 
 const LitCarousel = () => {

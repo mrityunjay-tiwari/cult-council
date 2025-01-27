@@ -1,19 +1,13 @@
 import React, { useEffect, useRef, useState } from "react";
 
 const images = [
-  "/music.jpg",
-  "/music.jpg",
-  "/music.jpg",
-  "/music.jpg",
-  "/music.jpg",
-  "/music.jpg",
-  "/music.jpg",
-  "/music.jpg",
-  "/music.jpg",
-  "/music.jpg",
-  "/music.jpg",
-  "/music.jpg",
-  "/music.jpg",
+  "https://ik.imagekit.io/mrityunjay/events10.jpg?updatedAt=1737974494684",
+  "https://ik.imagekit.io/mrityunjay/events8.jpg?updatedAt=1737974494105",
+  "https://ik.imagekit.io/mrityunjay/events7.jpeg?updatedAt=1737970309745",
+  "https://ik.imagekit.io/mrityunjay/events11.jpg?updatedAt=1737974491055",
+  "https://ik.imagekit.io/mrityunjay/events12.jpg?updatedAt=1737974636478",
+  "https://ik.imagekit.io/mrityunjay/events3.jpeg?updatedAt=1737970312510",
+  "https://ik.imagekit.io/mrityunjay/events7.jpeg?updatedAt=1737970309745",
 ];
 
 const Carousel = () => {

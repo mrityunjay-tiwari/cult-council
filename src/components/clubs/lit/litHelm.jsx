@@ -10,19 +10,19 @@ const LitHelm = () => {
     {
       name: 'Satwik Srivastava',
       role: 'Joint Secretary',
-      avatar: '/satwikJtsecyLit.jpg',
+      avatar: 'https://ik.imagekit.io/mrityunjay/satwikJtsecyLit.jpg?updatedAt=1737979022463',
       color: 'bg-blue-100',
     },
     {
       name: 'Gunjit Jain',
       role: 'Secretary',
-      avatar: '/litSecy.jpg',
+      avatar: 'https://ik.imagekit.io/mrityunjay/litSecy.jpg?updatedAt=1737979024010',
       color: 'bg-purple-100',
     },
     {
       name: 'Laavnya Srivastava',
       role: 'Joint Secretary',
-      avatar: '/laavnyaJtsecyLit.jpg', 
+      avatar: 'https://ik.imagekit.io/mrityunjay/laavnyaJtsecyLit.jpg?updatedAt=1737979023108', 
       color: 'bg-pink-100',
     },
   ];

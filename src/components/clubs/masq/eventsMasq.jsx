@@ -1,19 +1,22 @@
 import React, { useEffect, useRef, useState } from "react";
 
 const images = [
-  "/music.jpg",
-  "/music.jpg",
-  "/music.jpg",
-  "/music.jpg",
-  "/music.jpg",
-  "/music.jpg",
-  "/music.jpg",
-  "/music.jpg",
-  "/music.jpg",
-  "/music.jpg",
-  "/music.jpg",
-  "/music.jpg",
-  "/music.jpg",
+  "https://ik.imagekit.io/mrityunjay/stageplay4.jpg?updatedAt=1737978255171",
+  "https://ik.imagekit.io/mrityunjay/stageplay1.jpg?updatedAt=1737978254610",
+  "https://ik.imagekit.io/mrityunjay/stageplay2.jpg?updatedAt=1737978254420",
+  "https://ik.imagekit.io/mrityunjay/stageplay3.jpg?updatedAt=1737978253791",
+  "https://ik.imagekit.io/mrityunjay/nukkad2.jpg?updatedAt=1737978153873",
+  "https://ik.imagekit.io/mrityunjay/nukkad3.jpg?updatedAt=1737978153453",
+  "https://ik.imagekit.io/mrityunjay/nukkad4.jpg?updatedAt=1737978153161",
+  "https://ik.imagekit.io/mrityunjay/nukkad6.jpg?updatedAt=1737978153106",
+  "https://ik.imagekit.io/mrityunjay/nukkad5.jpg?updatedAt=1737978153155",
+  "https://ik.imagekit.io/mrityunjay/nukkad1.jpg?updatedAt=1737978153647",
+  "https://ik.imagekit.io/mrityunjay/nukkad7.jpg?updatedAt=1737978153643",
+  "https://ik.imagekit.io/mrityunjay/mime3.jpg?updatedAt=1737978001961",
+  "https://ik.imagekit.io/mrityunjay/mime5.jpg?updatedAt=1737978000531",
+  "https://ik.imagekit.io/mrityunjay/mime4.jpg?updatedAt=1737978000436",
+  "https://ik.imagekit.io/mrityunjay/mime1.jpg?updatedAt=1737978000113",
+  "https://ik.imagekit.io/mrityunjay/mime2.jpg?updatedAt=1737977999813",
 ];
 
 const MasqCarousel = () => {

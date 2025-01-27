@@ -8,21 +8,21 @@ const DfzHelm = () => {
 
   const teamMembers = [
     {
-      name: 'Rishika',
+      name: 'Rishika Varshney',
       role: 'Joint Secretary',
-      avatar: '/RishikaDfz.jpg',
+      avatar: 'https://ik.imagekit.io/mrityunjay/RishikaDfz.jpg?updatedAt=1737979365759',
       color: 'bg-blue-100',
     },
     {
       name: 'Yuvraj Solanki',
       role: 'Secretary',
-      avatar: '/YuvrajDfz.png',
+      avatar: 'https://ik.imagekit.io/mrityunjay/YuvrajDfz.png?updatedAt=1737979366151',
       color: 'bg-purple-100',
     },
     {
-      name: 'Sri Ram',
+      name: 'Jatothu Sriram',
       role: 'Joint Secretary',
-      avatar: '/SriramDfz.jpg',
+      avatar: 'https://ik.imagekit.io/mrityunjay/SriramDfz.jpg?updatedAt=1737979365402',
       color: 'bg-pink-100',
     },
   ];

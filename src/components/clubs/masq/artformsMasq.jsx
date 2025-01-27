@@ -5,48 +5,37 @@ import { ChevronLeft, ChevronRight, Drama, Sparkles, Calendar } from 'lucide-rea
 const performanceData = [
   {
     id: 1,
-    title: "Andha Yug",
-    year: 2023,
-    description: "A powerful adaptation of Dharamvir Bharati's epic play exploring the moral bankruptcy of the Mahabharata's final war.",
-    director: "Aman Sharma",
-    genre: "Philosophical Drama",
-    imageUrl: "/drama.jpg",
-    performers: 12,
-    venue: "Open Air Drama, IIT BHU"
+    title: "Stage Play",
+    year: "",
+    description: "A stage play is a scripted performance presented live on stage, combining acting, dialogue, and storytelling.",
+    director: "",
+    genre: "",
+    imageUrl: "https://ik.imagekit.io/mrityunjay/stageplay2.jpg?updatedAt=1737978254420",
+    performers: "",
+    venue: ""
   },
   {
     id: 2,
-    title: "Waiting for Godot",
+    title: "Nukkad Natak",
     year: 2022,
-    description: "Samuel Beckett's absurdist masterpiece examining human existence, hope, and the futility of waiting.",
+    description: "Nukkad Natak is a form of street theatre that conveys social messages through energetic, informal performances.",
     director: "Priya Mishra",
     genre: "Absurdist Drama",
-    imageUrl: "/drama.jpg",
+    imageUrl: "https://ik.imagekit.io/mrityunjay/nukkad2.jpg?updatedAt=1737978153873",
     performers: 4,
     venue: "SAC Auditorium"
   },
   {
     id: 3,
-    title: "Tughlaq",
+    title: "Mime",
     year: 2024,
-    description: "A nuanced exploration of Mohammad bin Tughlaq's complex reign, blending historical drama with contemporary political insights.",
+    description: "Mime is a theatrical performance art where actors express stories or emotions through gestures and facial expressions.",
     director: "Rohan Kapoor",
     genre: "Historical Drama",
-    imageUrl: "/drama.jpg",
+    imageUrl: "https://ik.imagekit.io/mrityunjay/mime2.jpg?updatedAt=1737977999813",
     performers: 15,
     venue: "Students' Cultural Center"
   },
-  {
-    id: 4,
-    title: "Mahabhrata Ki Ek Shaam",
-    year: 2023,
-    description: "A contemporary reimagining of the epic, focusing on human emotions and moral dilemmas.",
-    director: "Sneha Gupta",
-    genre: "Epic Adaptation",
-    imageUrl: "/drama.jpg", 
-    performers: 10,
-    venue: "OAT Night Stage"
-  }
 ];
 
 const DramaShowcase = () => {
@@ -181,7 +170,7 @@ const DramaShowcase = () => {
                   <Drama className="mr-2 text-emerald-400" />
                   {performance.title}
                 </h3>
-                <div className="mt-4 space-y-3 text-sm">
+                {/* <div className="mt-4 space-y-3 text-sm">
                   <p className="flex items-center">
                     <Sparkles className="mr-2 text-yellow-400" size={18} />
                     Director: {performance.director}
@@ -196,7 +185,7 @@ const DramaShowcase = () => {
                     <p>Performers: {performance.performers}</p>
                     <p>Venue: {performance.venue}</p>
                   </div>
-                </div>
+                </div> */}
               </div>
             </motion.div>
           ))}
