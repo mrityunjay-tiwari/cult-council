@@ -10,7 +10,7 @@ const WmcHelm = () => {
     {
       name: 'Kalyani Pande',
       role: 'Joint Secretary',
-      avatar: 'https://ik.imagekit.io/mrityunjay/SecyWmc.jpg?updatedAt=1737979509777',
+      avatar: 'https://ik.imagekit.io/mrityunjay/KalyaniWMC.jpg?updatedAt=1737979509507',
       color: 'bg-blue-100',
     },
     {

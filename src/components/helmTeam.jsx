@@ -309,7 +309,7 @@ const SeniorTeamDisplay = () => {
                   {/* Role Tooltip (Visible on Hover for Desktop and Long Press for Mobile) */}
                   {(isHovered || longPressedMember === index) && !isMobile && (
                     <div
-                      className={`absolute -top-12 left-1/2 -translate-x-1/2 ${member.accent} px-4 py-2 rounded-lg shadow-lg transform transition-all duration-300`}
+                      className={`absolute -top-12 left-1/2 -translate-x-1/2 ${member.accent} px-4 rounded-lg shadow-lg transform transition-all duration-300`}
                     >
                       <p className="text-sm font-bold text-white whitespace-nowrap">{member.role}</p>
                       <div className={`absolute -bottom-2 left-1/2 -translate-x-1/2 w-4 h-4 ${member.accent} transform rotate-45`}></div>
@@ -346,7 +346,7 @@ const SeniorTeamDisplay = () => {
                   <div
                     className={`absolute bottom-[-8] left-0 right-0 text-center transition-all duration-300 ${isMobile ? 'block' : 'hidden'}`}
                   >
-                    <div className="bg-white mx-4 py-2 px-4 rounded-lg shadow-lg">
+                    <div className="bg-white mx-4 py-2 my-2 rounded-lg shadow-lg">
                       <p className="text-sm font-bold text-gray-900">{member.name}</p>
                     </div>
                   </div>
