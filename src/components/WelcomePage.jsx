@@ -1,3 +1,149 @@
+// import gsap from "gsap/dist/gsap"
+// import { useGSAP } from "@gsap/react"
+// import React, { useState, useEffect, useCallback, useRef } from 'react';
+// import { Link } from 'lucide-react';
+// import NavigationMenu from "./header/NavBar";
+// import {cn} from './lib/utils';
+// import { AnimatePresence, motion } from "framer-motion";
+
+// const WelcomePage = () => {
+//   const blobRef = useRef(null);
+
+//   const words = ["Sing", "Dance", "Create", "Do Theatre", "Play With Words", "Nurture Fashion", "Quiz"];
+
+//   useGSAP(() => {
+//     gsap.to('#cult', {opacity: 1, duration: 1.5, delay: 1.5, translateY: 250})
+//   }, []);
+
+//   useEffect(() => {
+//     const handlePointerMove = (event) => {
+//       const { clientX, clientY } = event;
+
+//       blobRef.current.animate({
+//         left: `${clientX}px`,
+//         top: `${clientY}px`
+//       }, { duration: 3000, fill: "forwards" });
+//     };
+
+//     window.addEventListener('pointermove', handlePointerMove);
+
+//     return () => {
+//       window.removeEventListener('pointermove', handlePointerMove);
+//     };
+//   }, []);
+
+//   return (
+//     <div className="grid place-items-center h-screen bg-neutral-950 overflow-hidden max-sm:h-[600px] max-sm:flex max-sm:flex-col max-sm:justify-center">
+//       {/* Background bubbles animation */}
+//       <div className="absolute inset-0 overflow-hidden">
+//         {[...Array(20)].map((_, i) => (
+//           <div
+//             key={i}
+//             className="absolute rounded-full opacity-10"
+//             style={{
+//               width: `${Math.random() * 200 + 50}px`,
+//               height: `${Math.random() * 200 + 50}px`,
+//               background: 'white',
+//               top: `${Math.random() * 100}%`,
+//               left: `${Math.random() * 100}%`,
+//               animation: `floatBubble ${Math.random() * 10 + 10}s linear infinite`,
+//               animationDelay: `${Math.random()}s`,
+//             }}
+//           />
+//         ))}
+//       </div>
+
+//       <style jsx>{`
+//         @keyframes floatBubble {
+//           0% { transform: translateY(100vh) scale(0); opacity: 0; }
+//           50% { opacity: 0.1; }
+//           100% { transform: translateY(-100px) scale(1); opacity: 0; }
+//         }
+//       `}</style>
+
+//       <div
+//         id="blob"
+//         ref={blobRef}
+//         style={{
+//           backgroundColor: 'white',
+//           height: '34vmax',
+//           aspectRatio: '1',
+//           position: 'absolute',
+//           left: '50%',
+//           top: '50%',
+//           transform: 'translate(-50%, -50%)',
+//           borderRadius: '50%',
+//           background: 'linear-gradient(to right, aquamarine, mediumpurple)',
+//           animation: 'rotate 20s infinite',
+//           opacity: 0.8,
+//           filter: 'blur(12vmax)',
+//           zIndex: 0,
+//         }}
+//       ></div>
+
+//       <div className="px-4 w-auto h-auto max-sm:text-center max-sm:px-2">
+//         <div className="flex h-[10rem] max-sm:flex-col max-sm:h-auto max-sm:items-center max-sm:gap-2">
+//           <div className="h-auto w-auto text-[80px] pr-8 font-normal text-neutral-400 dark:text-neutral-400 max-sm:text-[50px] max-sm:pr-0">
+//                We
+//           </div>
+//           <div className="h-auto w-auto text-[80px] font-normal text-neutral-400 dark:text-neutral-400 max-sm:text-[50px]">
+//                <FlipWords words={words} /> <br />
+//           </div>
+//         </div>
+
+//         <div className="text-[80px] mx-auto font-normal text-neutral-400 dark:text-neutral-400 max-sm:text-[50px]">
+//           at Cultural Council of IIT (BHU), Varanasi
+//         </div>
+//       </div>
+//     </div>
+//   );
+// };
+
+// export default WelcomePage;
+
+
+// const FlipWords = ({ words, duration = 1500, className }) => {
+//   const [currentWord, setCurrentWord] = useState(words[0]);
+//   const [isAnimating, setIsAnimating] = useState(false);
+
+//   const startAnimation = useCallback(() => {
+//     const word = words[words.indexOf(currentWord) + 1] || words[0];
+//     setCurrentWord(word);
+//     setIsAnimating(true);
+//   }, [currentWord, words]);
+
+//   useEffect(() => {
+//     if (!isAnimating) setTimeout(() => {
+//       startAnimation();
+//     }, duration);
+//   }, [isAnimating, duration, startAnimation]);
+
+//   return (
+//     <AnimatePresence mode="wait">
+//       <motion.div
+//         key={currentWord}
+//         initial={{ opacity: 0, y: 20 }}
+//         animate={{ opacity: 1, y: 0 }}
+//         exit={{ opacity: 0, y: -20 }}
+//         transition={{ duration: 0.5 }}
+//         onAnimationComplete={() => { setIsAnimating(false); }}
+//         className={cn("font-bold", className)}
+//       >
+//         <span className="flex">
+//         {currentWord.split("-").map((letter, letterIndex) => (
+//           <span key={`${letter}-${letterIndex}`} className="flex">
+//             {letter}
+//           </span>
+//         ))}
+//       </span>
+//       </motion.div>
+//     </AnimatePresence>
+//   );
+// };
+
+
+
+
 import gsap from "gsap/dist/gsap"
 import { useGSAP } from "@gsap/react"
 import React, { useState, useEffect, useCallback, useRef } from 'react';
@@ -94,6 +240,13 @@ const WelcomePage = () => {
         <div className="text-[80px] mx-auto font-normal text-neutral-400 dark:text-neutral-400 max-sm:text-[50px]">
           at Cultural Council of IIT (BHU), Varanasi
         </div>
+      </div>
+
+      {/* Logos on the top right */}
+      <div className="absolute top-0 right-0 p-4 flex items-center gap-4">
+        <img src="/councillogo.png" alt="Logo 1" className="h-12 w-12 object-contain" />
+        <div className="border-l-2 border-neutral-400 h-10 mx-2"></div>
+        <img src="/collegelogo.png" alt="Logo 2" className="h-12 w-12 object-contain" />
       </div>
     </div>
   );
