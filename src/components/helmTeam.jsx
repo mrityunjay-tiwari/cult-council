@@ -239,7 +239,7 @@ const SeniorTeamDisplay = () => {
   const handleLongPressStart = (index) => {
     longPressTimeout.current = setTimeout(() => {
       setLongPressedMember(index);
-    }, 500); // Long press duration (500ms)
+    }, 200); 
   };
 
   const handleLongPressEnd = () => {

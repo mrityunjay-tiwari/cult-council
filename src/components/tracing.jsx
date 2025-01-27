@@ -39,7 +39,7 @@ const Tracing = () => {
   }, []);
 
   return (
-    <div className="fixed left-6 top-0 h-full pointer-events-none z-40">
+    <div className="fixed left-2 top-0 h-full pointer-events-none z-40">
       <div className="relative h-full w-px">
         <div 
           className={`absolute top-0 w-px transition-all duration-300 ease-out ${isVisible ? 'opacity-100' : 'opacity-0'}`}
