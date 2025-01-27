@@ -404,19 +404,19 @@ const VideoTeamDisplay = () => {
     {
       name: 'Kridahi Narsimha',
       role: 'Joint Head',
-      avatar: './7.jpg',
+      avatar: 'https://ik.imagekit.io/mrityunjay/7.jpg?updatedAt=1737970023102',
       color: 'bg-blue-100',
     },
     {
       name: 'Kushagra Verma',
       role: 'Video Head',
-      avatar: './6.jpg',
+      avatar: 'https://ik.imagekit.io/mrityunjay/6.jpg?updatedAt=1737970022874',
       color: 'bg-purple-100',
     },
     {
       name: 'Utkarsh Singh Rana',
       role: 'Joint Head',
-      avatar: './8.jpg',
+      avatar: 'https://ik.imagekit.io/mrityunjay/8.jpg?updatedAt=1737970023106',
       color: 'bg-pink-100',
     },
   ];

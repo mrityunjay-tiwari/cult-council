@@ -485,25 +485,25 @@ const VideoTeamDisplay = () => {
     {
       name: 'Laxmi Kumari',
       role: 'Tech Head',
-      avatar: './laxmi.jpeg',
+      avatar: 'https://ik.imagekit.io/mrityunjay/laxmi.jpeg?updatedAt=1737970022740 ',
       color: 'bg-blue-100',
     },
     {
       name: 'Mrityunjay Tiwari',
       role: 'Tech Head',
-      avatar: './PP.jpg',
+      avatar: 'https://ik.imagekit.io/mrityunjay/PP.jpg?updatedAt=1737970022737',
       color: 'bg-purple-100',
     },
     {
       name: 'Ansh Yadav',
       role: 'Tech Head',
-      avatar: './ansh.jpeg',
+      avatar: 'https://ik.imagekit.io/mrityunjay/ansh.jpeg?updatedAt=1737970022935',
       color: 'bg-pink-100',
     },
     {
       name: 'Nishant Rihan',
       role: 'Teach Manager',
-      avatar: './nishant.jpeg',
+      avatar: 'https://ik.imagekit.io/mrityunjay/nishant.jpeg?updatedAt=1737970023541',
       color: 'bg-pink-100',
     },
   ];

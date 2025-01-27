@@ -10,19 +10,19 @@ const VideoTeamDisplay = () => {
     {
       name: 'Kumar Soham',
       role: 'Design Head',
-      avatar: './soham.jpeg',
+      avatar: 'https://ik.imagekit.io/mrityunjay/soham.jpeg?updatedAt=1737970027739',
       color: 'bg-blue-100',
     },
     {
       name: 'Sambhav Gupta',
       role: 'Design Head',
-      avatar: './sambhav.jpg',
+      avatar: 'https://ik.imagekit.io/mrityunjay/sambhav.jpg?updatedAt=1737970027605',
       color: 'bg-purple-100',
     },
     {
       name: 'Om Utkarsh',
       role: 'Joint Head',
-      avatar: './Om.png',
+      avatar: 'https://ik.imagekit.io/mrityunjay/Om.png?updatedAt=1737970024182',
       color: 'bg-pink-100',
     },
   ];
