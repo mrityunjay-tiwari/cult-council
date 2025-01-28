@@ -33,7 +33,7 @@ export function Imc() {
     </h1>
 
     <h2 className="mb-4 text-slate-400 text-3xl md:text-6xl font-medium">
-      The soulful sound of IIT BHU
+      "The soulful sound of IIT BHU"
     </h2>
 
     <p className="text-slate-100 font-light text-sm md:text-base leading-relaxed max-w-2xl mx-auto">

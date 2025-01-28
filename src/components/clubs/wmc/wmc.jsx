@@ -33,7 +33,7 @@ export function Wmc() {
     </h1>
 
     <h2 className="mb-4 text-slate-400 text-3 xl md:text-6xl font-medium">
-    Vibrant Vibes of IIT BHU
+    "Vibrant Vibes of IIT BHU"
     </h2>
 
     <p className="text-slate-100 font-light text-sm md:text-base leading-relaxed max-w-2xl mx-auto">

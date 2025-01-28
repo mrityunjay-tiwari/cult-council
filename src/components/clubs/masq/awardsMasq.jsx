@@ -65,10 +65,9 @@
 import React, { useState } from 'react';
 
 const medals = [
-  { id: 1, src: '/gold.png', title: 'Gold Medal', year: '2021', location: 'Tokyo, Japan' },
-  { id: 2, src: '/silver.png', title: 'Silver Medal', year: '2019', location: 'Paris, France' },
-  { id: 3, src: '/bronze.png', title: 'Bronze Medal', year: '2020', location: 'London, UK' },
-  { id: 4, src: '/gold.png', title: 'Gold Medal', year: '2022', location: 'Beijing, China' },
+  { id: 1, src: '/gold.png', title: 'Nukkad', year: '2017', location: 'Inter IIT Cult Meet' },
+  { id: 2, src: '/gold.png', title: 'Nukkad', year: '2018', location: 'Anwesha, IIT Kanpur  ' },
+  { id: 3, src: '/bronze.png', title: 'Mime', year: '', location: '' },
 ];
 
 const MasqMedalShowcase = () => {
