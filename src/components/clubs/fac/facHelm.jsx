@@ -82,7 +82,7 @@ const FacHelm = () => {
       <div className="relative max-w-6xl">
         <div className="text-center mb-8">
           <h2 className="text-3xl md:text-4xl font-semibold text-slate-200">Our Helm</h2>
-          {/* <p className="text-gray-600 mt-2">Meet our Tech Guys</p> */}
+          <p className="text-gray-600 mt-2">Meet our Helm Team</p>
         </div>
 
         <div className="flex justify-center items-center -space-x-8 flex-wrap">
