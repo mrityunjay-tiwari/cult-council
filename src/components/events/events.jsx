@@ -302,6 +302,31 @@ const events = [
       "/dfz/dfz2.jpg",
       "/dfz/dfz2.jpg",
     ]
+  },
+  {
+    id: 3,
+    title: "General Championship Culturals",
+    description: "The Cultural Council hosted IIT (BHU) Varanasi's first-ever General Championship Cultural 1.0 on January 24th-25th, with 850+ participants across 25+ events. The championship concluded with a grand prize ceremony graced by Prof. Rajesh Kumar (Dean of Students Affairs), leaving a lasting impact.",
+    features: [
+    { "icon": Music, "text": "Musical Performances" },
+    { "icon": Users, "text": "Diverse Participation" },
+    { "icon": Trophy, "text": "Grand Prize Ceremony" }
+    ],
+    images: [
+      "/dfz/dfz1.jpg",
+      "/dfz/dfz2.jpg",
+      "/dfz/dfz2.jpg",
+      "/dfz/dfz2.jpg",
+      "/dfz/dfz2.jpg",
+      "/dfz/dfz2.jpg",
+      "/dfz/dfz2.jpg",
+      "/dfz/dfz2.jpg",
+      "/dfz/dfz2.jpg",
+      "/dfz/dfz2.jpg",
+      "/dfz/dfz2.jpg",
+      "/dfz/dfz2.jpg",
+      "/dfz/dfz2.jpg",
+    ]
   }
 ];
 
@@ -469,10 +494,10 @@ const ParallaxGallery = () => {
 
 const Events = () => {
   return (
-    <div className="bg-gray-900 text-white min-h-screen pb-10 md:pb-20 max-w-screen overflow-x-hidden">
-      <div className="container mx-auto py-10 md:py-20 max-w-full">
+    <div className="bg-gray-900 text-white min-h-screen pb-10 md:pb-20 flex flex-col items-center justify-center">
+      <div className="container mx-auto py-10 md:py-20 max-w-full text-center">
         <AnimatedHeading />
-        <div className="flex flex-wrap -mx-2 md:-mx-6 max-w-full">
+        <div className="flex flex-wrap justify-center -mx-2 md:-mx-6 max-w-full">
           {events.map(event => (
             <EventCard key={event.id} {...event} />
           ))}
@@ -482,5 +507,8 @@ const Events = () => {
     </div>
   );
 };
+
+
+
 
 export default Events;
