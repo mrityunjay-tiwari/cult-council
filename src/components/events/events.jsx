@@ -306,7 +306,7 @@ const events = [
   {
     id: 3,
     title: "General Championship Culturals",
-    description: "The Cultural Council hosted IIT (BHU) Varanasi's first-ever General Championship Cultural 1.0 on January 24th-25th, with 850+ participants across 25+ events. The championship concluded with a grand prize ceremony graced by Prof. Rajesh Kumar (Dean of Students Affairs), leaving a lasting impact.",
+    description: "The Cultural Council hosted IIT (BHU) Varanasi's first-ever General Championship Cultural 1.0 on January 24th-25th, with 850+ participants across 40+ events. The championship concluded with a grand prize ceremony graced by Prof. Rajesh Kumar (Dean of Students Affairs), leaving a lasting impact.",
     features: [
     { "icon": Music, "text": "Musical Performances" },
     { "icon": Users, "text": "Diverse Participation" },
