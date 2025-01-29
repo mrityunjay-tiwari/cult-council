@@ -209,7 +209,7 @@ const SeniorTeamDisplay = () => {
     {
       name: 'Rohit Kaushik',
       role: 'Joint General Secretary',
-      avatar: 'https://ik.imagekit.io/mrityunjay/rohit.jpg?updatedAt=1737970023663',
+      avatar: 'https://ik.imagekit.io/mrityunjay/rohit.jpeg?updatedAt=1738139317033',
       color: 'bg-emerald-100',
       accent: 'bg-emerald-500',
       icon: Zap,
