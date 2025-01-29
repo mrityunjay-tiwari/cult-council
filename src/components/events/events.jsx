@@ -494,7 +494,7 @@ const ParallaxGallery = () => {
 
 const Events = () => {
   return (
-    <div className="bg-gray-900 text-white min-h-screen pb-10 md:pb-20 flex flex-col items-center justify-center">
+    <div className="bg-gray-900 text-white min-h-screen pb-10 md:pb-20 flex flex-col items-center justify-center overflow-x-hidden">
       <div className="container mx-auto py-10 md:py-20 max-w-full text-center">
         <AnimatedHeading />
         <div className="flex flex-wrap justify-center -mx-2 md:-mx-6 max-w-full">
